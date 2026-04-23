@@ -76,6 +76,8 @@
   .ad-slot { background: repeating-linear-gradient(45deg, #f3f4f6, #f3f4f6 10px, #e5e7eb 10px, #e5e7eb 20px); }
   /* Werbeplatzhalter ausblenden, bis AdSense live ist. Zum Einschalten: Zeile auskommentieren. */
   .ad-container { display: none; }
+  /* Support-Platzhalter (Ko-fi/PayPal) ausblenden, bis Accounts eingerichtet sind. */
+  .support-placeholder { display: none; }
   .pulse-dot { animation: pulse 2s ease-in-out infinite; }
   @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
 </style>
@@ -449,9 +451,10 @@
 <section id="unterstuetzen" class="bg-sea-500 text-white">
   <div class="max-w-5xl mx-auto px-4 py-10">
     <h2 class="text-2xl md:text-3xl font-bold mb-3">Unterstützen</h2>
-    <p class="text-sea-50 mb-6 max-w-3xl">Diese Seite ist werbefinanziert und privat betrieben. Wer die laufende Pflege unterstützen möchte:</p>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 max-w-2xl">
+    <p class="text-sea-50 mb-6 max-w-3xl support-placeholder">Diese Seite ist privat betrieben. Wer die laufende Pflege unterstützen möchte:</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 max-w-2xl support-placeholder">
       <a href="https://ko-fi.com/KOFI_USERNAME_PLACEHOLDER" class="block bg-white text-sea-900 rounded-lg p-5 hover:shadow-lg transition" rel="noopener">
         <h3 class="font-semibold mb-1">Ko-fi</h3>
         <p class="text-sm text-sea-700">Einmalige Kaffee-Spende für die Redaktion.</p>
