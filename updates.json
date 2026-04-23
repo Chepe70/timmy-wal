@@ -1,11 +1,19 @@
 {
-  "generated_at": "2026-04-23T17:55:53+00:00",
+  "generated_at": "2026-04-23T19:37:39+00:00",
   "source_check": [
     "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
     "https://www.deutsches-meeresmuseum.de/wissenschaft/sichtungen/buckelwal-in-der-ostsee",
     "https://www.nordkurier.de/suche?q=timmy+wal"
   ],
   "entries": [
+    {
+      "source": "ZDFheute Liveblog",
+      "title": "Wal liegt weiter im flachen Wasser",
+      "summary": "Wie bis zum Abend im ZDFheute-Livestream zu sehen war, liegt der Wal noch immer vor der Insel Poel - und macht nur kleinere sichtbare Bewegungen. Der Wasserstand liegt derzeit etwa 15 Zentimeter unter Normal und steigt …",
+      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
+      "timestamp": "2026-04-23T19:37:36+00:00",
+      "id": "a4f53a30daa9"
+    },
     {
       "source": "Dt. Meeresmuseum",
       "title": "„Forschungsstiftung Ostsee“ vergibt Preise an herausragende Nachwuchswissenschaftler*innen",
