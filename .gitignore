@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.DS_Store
+Thumbs.db
+
+# interne Projektsteuerung - nicht ins Public Repo
+CLAUDE.md
+00_Projektsteuerung/
+logs/
