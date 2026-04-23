@@ -74,6 +74,8 @@
   details[open] > summary .chev { transform: rotate(90deg); }
   .chev { transition: transform 0.15s ease; display: inline-block; }
   .ad-slot { background: repeating-linear-gradient(45deg, #f3f4f6, #f3f4f6 10px, #e5e7eb 10px, #e5e7eb 20px); }
+  /* Werbeplatzhalter ausblenden, bis AdSense live ist. Zum Einschalten: Zeile auskommentieren. */
+  .ad-container { display: none; }
   .pulse-dot { animation: pulse 2s ease-in-out infinite; }
   @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
 </style>
@@ -149,7 +151,7 @@
 </section>
 
 <!-- AD SLOT 1: Header-Banner 728x90 / responsive -->
-<div class="max-w-5xl mx-auto px-4 py-4">
+<div class="ad-container max-w-5xl mx-auto px-4 py-4">
   <aside class="ad-slot border border-dashed border-gray-400 text-center text-xs text-gray-600 py-8 rounded" aria-label="Werbung">
     <span class="block uppercase tracking-wider">Anzeige</span>
     <!-- AD SLOT 1: Leaderboard 728x90 / Responsive — AdSense-Einheit hier einfügen -->
@@ -310,7 +312,7 @@
 </section>
 
 <!-- AD SLOT 2: Mid-Content 300x250 / responsive -->
-<div class="max-w-5xl mx-auto px-4 py-4">
+<div class="ad-container max-w-5xl mx-auto px-4 py-4">
   <aside class="ad-slot border border-dashed border-gray-400 text-center text-xs text-gray-600 py-8 rounded" aria-label="Werbung">
     <span class="block uppercase tracking-wider">Anzeige</span>
     <!-- AD SLOT 2: Medium Rectangle 300x250 / Responsive — AdSense-Einheit hier einfügen -->
@@ -436,7 +438,7 @@
 </section>
 
 <!-- AD SLOT 3: Inline Responsive -->
-<div class="max-w-5xl mx-auto px-4 py-4">
+<div class="ad-container max-w-5xl mx-auto px-4 py-4">
   <aside class="ad-slot border border-dashed border-gray-400 text-center text-xs text-gray-600 py-8 rounded" aria-label="Werbung">
     <span class="block uppercase tracking-wider">Anzeige</span>
     <!-- AD SLOT 3: Inline Responsive — AdSense-Einheit hier einfügen -->
