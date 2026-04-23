@@ -6,7 +6,7 @@ Informations-Seite zum in der Ostsee gestrandeten Buckelwal „Timmy".
 
 ## Was ist das?
 
-Eine seriöse, laufend aktualisierte Informationsseite: Chronologie, Rettungsplan, Akteure, Quellen. Der Live-Ticker wird stündlich automatisch aktualisiert.
+Eine seriöse, laufend aktualisierte Informationsseite: Chronologie, Rettungsplan, Akteure, Quellen. Der Live-Ticker wird automatisch aktualisiert (GitHub Actions, zur vollen Stunde).
 
 ## Struktur
 
@@ -45,12 +45,10 @@ python -m http.server 8000       # index.html unter http://localhost:8000
   - www-CNAME: `chepe70.github.io`
 - [ ] Impressum-Service-Adresse bestellen, in `impressum.html` eintragen
 - [ ] Datenschutzerklärung mit Generator final prüfen und anpassen
-- [ ] Google AdSense-Publisher-ID eintragen (HTML-Kommentar `<script async src=...>`)
-- [ ] Amazon-Associates-Tag eintragen (Platzhalter `AMAZON_TAG_PLACEHOLDER-21`)
-- [ ] Ko-fi- und PayPal-Username in `index.html` eintragen
+- [x] Amazon-Associates-Tag eingetragen: `timmywal-21`
 - [ ] OG-Image erstellen und `/og-image.jpg` hochladen
 - [ ] Google Publisher Center für News-Aufnahme beantragen
 
 ## Lizenz
 
-Texte: CC BY 4.0 der Redaktion. Zitate folgen dem Urheberrecht der jeweiligen Medien.
+Texte: CC BY 4.0 Gerhard Hofer. Zitate folgen dem Urheberrecht der jeweiligen Medien.

@@ -4,21 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Timmy — der gestrandete Buckelwal in der Ostsee · Live-Ticker &amp; Chronologie</title>
-<meta name="description" content="Aktuelle Informationen zum Buckelwal Timmy in der Ostsee: stündlich aktualisierter Ticker, Chronologie, Rettungsplan, Quellen. Stand: 23.04.2026.">
+<meta name="description" content="Aktuelle Informationen zum Buckelwal Timmy in der Ostsee: regelmäßig aktualisierter Ticker, Chronologie, Rettungsplan, Quellen. Stand: 23.04.2026.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="robots" content="index,follow">
-<meta name="author" content="Redaktion timmy-wal.de">
+<meta name="author" content="Gerhard Hofer">
 <link rel="canonical" href="https://timmy-wal.de/">
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="de_DE">
 <meta property="og:url" content="https://timmy-wal.de/">
 <meta property="og:title" content="Timmy — der gestrandete Buckelwal in der Ostsee">
-<meta property="og:description" content="Stündlich aktualisierter Live-Ticker, Chronologie und Rettungsplan zum Wal Timmy.">
+<meta property="og:description" content="Live-Ticker, Chronologie und Rettungsplan zum Wal Timmy in der Ostsee.">
 <meta property="og:site_name" content="timmy-wal.de">
 <meta property="og:image" content="https://timmy-wal.de/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Timmy — der gestrandete Buckelwal in der Ostsee">
-<meta name="twitter:description" content="Stündlich aktualisierter Live-Ticker zur Rettung von Timmy.">
+<meta name="twitter:description" content="Live-Ticker zur Lage von Buckelwal Timmy in der Ostsee.">
 
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
@@ -43,18 +44,14 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "NewsArticle",
+  "@type": "Article",
   "headline": "Timmy — der gestrandete Buckelwal in der Ostsee",
   "datePublished": "2026-04-23",
   "dateModified": "2026-04-23",
   "inLanguage": "de-DE",
   "author": {
-    "@type": "Organization",
-    "name": "Redaktion timmy-wal.de"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "timmy-wal.de"
+    "@type": "Person",
+    "name": "Gerhard Hofer"
   },
   "description": "Laufend aktualisierte Informationen zum in der Ostsee gestrandeten Buckelwal Timmy: Ticker, Chronologie, Rettungsplan, Quellen.",
   "about": {
@@ -64,22 +61,12 @@
 }
 </script>
 
-<!-- AdSense-Vorbereitung: Publisher-ID bei Freischaltung eintragen -->
-<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
-
 <style>
   :focus-visible { outline: 3px solid #2e6a90; outline-offset: 2px; }
   details > summary { cursor: pointer; list-style: none; }
   details > summary::-webkit-details-marker { display: none; }
   details[open] > summary .chev { transform: rotate(90deg); }
   .chev { transition: transform 0.15s ease; display: inline-block; }
-  .ad-slot { background: repeating-linear-gradient(45deg, #f3f4f6, #f3f4f6 10px, #e5e7eb 10px, #e5e7eb 20px); }
-  /* Werbeplatzhalter ausblenden, bis AdSense live ist. Zum Einschalten: Zeile auskommentieren. */
-  .ad-container { display: none; }
-  /* Support-Platzhalter (Ko-fi/PayPal) ausblenden, bis Accounts eingerichtet sind. */
-  .support-placeholder { display: none; }
-  .pulse-dot { animation: pulse 2s ease-in-out infinite; }
-  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
 </style>
 </head>
 <body class="bg-sea-50 text-sea-900 antialiased">
@@ -96,11 +83,29 @@
         <li><a href="#chronologie" class="hover:text-sea-900">Chronologie</a></li>
         <li><a href="#akteure" class="hover:text-sea-900">Akteure</a></li>
         <li><a href="#medien" class="hover:text-sea-900">Medien</a></li>
-        <li><a href="#unterstuetzen" class="hover:text-sea-900">Unterstützen</a></li>
+        <li><a href="#tierschutz" class="hover:text-sea-900">Tierschutz</a></li>
         <li><a href="#quellen" class="hover:text-sea-900">Quellen</a></li>
       </ul>
     </nav>
+    <button type="button" id="mobile-nav-toggle" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded border border-sea-200 text-sea-700" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-nav">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
   </div>
+  <nav id="mobile-nav" aria-label="Mobilnavigation" class="md:hidden hidden border-t border-sea-200 bg-white">
+    <ul class="max-w-5xl mx-auto px-4 py-3 flex flex-col gap-1 text-sm text-sea-700">
+      <li><a href="#ticker" class="block py-2 hover:text-sea-900">Ticker</a></li>
+      <li><a href="#rettungsplan" class="block py-2 hover:text-sea-900">Rettungsplan</a></li>
+      <li><a href="#chronologie" class="block py-2 hover:text-sea-900">Chronologie</a></li>
+      <li><a href="#akteure" class="block py-2 hover:text-sea-900">Akteure</a></li>
+      <li><a href="#medien" class="block py-2 hover:text-sea-900">Medien</a></li>
+      <li><a href="#tierschutz" class="block py-2 hover:text-sea-900">Tierschutz</a></li>
+      <li><a href="#quellen" class="block py-2 hover:text-sea-900">Quellen</a></li>
+    </ul>
+  </nav>
 </header>
 
 <main id="hauptinhalt">
@@ -109,7 +114,7 @@
 <section id="status" class="bg-sea-900 text-white">
   <div class="max-w-5xl mx-auto px-4 py-10 md:py-16">
     <p class="text-sea-200 text-sm uppercase tracking-wider mb-3 flex items-center gap-2">
-      <span class="inline-block w-2 h-2 rounded-full bg-red-500 pulse-dot" aria-hidden="true"></span>
+      <span class="inline-block w-2 h-2 rounded-full bg-sea-500" aria-hidden="true"></span>
       Stand: <span id="hero-datum">23.04.2026</span>
     </p>
     <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-4">
@@ -140,25 +145,17 @@
   <div class="max-w-5xl mx-auto px-4 py-8">
     <div class="flex items-center justify-between mb-4">
       <h2 class="text-2xl md:text-3xl font-bold text-sea-900 flex items-center gap-3">
-        <span class="inline-block w-3 h-3 rounded-full bg-red-500 pulse-dot" aria-hidden="true"></span>
+        <span class="inline-block w-3 h-3 rounded-full bg-sea-500" aria-hidden="true"></span>
         Live-Ticker
       </h2>
       <p class="text-xs text-sea-700">Zuletzt geprüft: <time id="ticker-stand">wird geladen …</time></p>
     </div>
     <div id="ticker-content" class="space-y-3" aria-live="polite">
-      <div class="text-sm text-sea-700 italic">Der Ticker wird stündlich automatisch aktualisiert. Bei der ersten Inbetriebnahme erscheinen hier neue Meldungen aus ZDFheute-Liveblog und Deutschem Meeresmuseum.</div>
+      <div class="text-sm text-sea-700 italic">Der Ticker wird automatisch aktualisiert. Bei der ersten Inbetriebnahme erscheinen hier neue Meldungen aus ZDFheute-Liveblog und Deutschem Meeresmuseum.</div>
     </div>
     <p class="text-xs text-gray-500 mt-4">Der Ticker zitiert nur Überschrift und erste Zeile der Originalmeldung mit Quell-Link. Rechte an den Meldungen verbleiben bei den jeweiligen Medien.</p>
   </div>
 </section>
-
-<!-- AD SLOT 1: Header-Banner 728x90 / responsive -->
-<div class="ad-container max-w-5xl mx-auto px-4 py-4">
-  <aside class="ad-slot border border-dashed border-gray-400 text-center text-xs text-gray-600 py-8 rounded" aria-label="Werbung">
-    <span class="block uppercase tracking-wider">Anzeige</span>
-    <!-- AD SLOT 1: Leaderboard 728x90 / Responsive — AdSense-Einheit hier einfügen -->
-  </aside>
-</div>
 
 <!-- STECKBRIEF TIMMY -->
 <section class="max-w-5xl mx-auto px-4 py-8">
@@ -313,14 +310,6 @@
   </ol>
 </section>
 
-<!-- AD SLOT 2: Mid-Content 300x250 / responsive -->
-<div class="ad-container max-w-5xl mx-auto px-4 py-4">
-  <aside class="ad-slot border border-dashed border-gray-400 text-center text-xs text-gray-600 py-8 rounded" aria-label="Werbung">
-    <span class="block uppercase tracking-wider">Anzeige</span>
-    <!-- AD SLOT 2: Medium Rectangle 300x250 / Responsive — AdSense-Einheit hier einfügen -->
-  </aside>
-</div>
-
 <!-- AKTEURE -->
 <section id="akteure" class="max-w-5xl mx-auto px-4 py-10">
   <h2 class="text-2xl md:text-3xl font-bold mb-6 text-sea-900">Wer ist an Timmys Rettung beteiligt?</h2>
@@ -394,7 +383,7 @@
 <!-- MEDIEN -->
 <section id="medien" class="max-w-5xl mx-auto px-4 py-10">
   <h2 class="text-2xl md:text-3xl font-bold mb-2 text-sea-900">Medien &amp; Videos</h2>
-  <p class="text-sea-700 mb-6 text-sm max-w-3xl">Redaktionell geprüfte externe Videos und Infografiken zu Timmy. Bilder werden nicht eingebettet — bitte die jeweilige Quelle besuchen. Rechte liegen bei den jeweiligen Anbietern.</p>
+  <p class="text-sea-700 mb-6 text-sm max-w-3xl">Geprüfte externe Videos und Infografiken zu Timmy. Bilder werden nicht eingebettet — bitte die jeweilige Quelle besuchen. Rechte liegen bei den jeweiligen Anbietern.</p>
 
   <h3 class="text-lg font-semibold text-sea-900 mb-3">Infografiken / Karten</h3>
   <ul class="space-y-2 mb-6">
@@ -420,55 +409,30 @@
     <li class="bg-white border border-sea-200 rounded p-3 text-sm"><a href="https://www.regierung-mv.de/Landesregierung/lm/Service/Presse/Aktuelle-Pressemitteilungen/" class="font-medium text-sea-700 underline" rel="noopener">Umweltministerium MV</a></li>
   </ul>
 
-  <!-- Amazon-Associates-Buchtipps (Affiliate-Platzhalter) -->
-  <h3 class="text-lg font-semibold text-sea-900 mt-10 mb-3">Zum Weiterlesen <span class="text-xs font-normal text-gray-500">(Buchtipps — Affiliate-Links)</span></h3>
+  <!-- Amazon-Associates-Buchtipps -->
+  <h3 class="text-lg font-semibold text-sea-900 mt-10 mb-3">Zum Weiterlesen <span class="text-xs font-normal text-gray-500">(Buchtipps — enthält Werbung)</span></h3>
   <ul class="grid grid-cols-1 md:grid-cols-3 gap-3">
     <li class="bg-white border border-sea-200 rounded p-3 text-sm">
-      <a href="https://www.amazon.de/s?k=buckelwal+buch&amp;tag=AMAZON_TAG_PLACEHOLDER-21" class="font-medium text-sea-700 underline" rel="noopener sponsored">Buckelwal-Sachbücher</a>
-      <p class="text-xs text-gray-500 mt-1">Affiliate-Link zu Amazon.de</p>
+      <a href="https://www.amazon.de/s?k=buckelwal+buch&amp;tag=timmywal-21" class="font-medium text-sea-700 underline" rel="noopener sponsored">Buckelwal-Sachbücher</a>
+      <p class="text-xs text-gray-500 mt-1"><strong>Anzeige</strong> · Amazon.de</p>
     </li>
     <li class="bg-white border border-sea-200 rounded p-3 text-sm">
-      <a href="https://www.amazon.de/s?k=bbc+wale+ozean+blu-ray&amp;tag=AMAZON_TAG_PLACEHOLDER-21" class="font-medium text-sea-700 underline" rel="noopener sponsored">Wal-Dokumentationen (BBC)</a>
-      <p class="text-xs text-gray-500 mt-1">Affiliate-Link zu Amazon.de</p>
+      <a href="https://www.amazon.de/s?k=bbc+wale+ozean+blu-ray&amp;tag=timmywal-21" class="font-medium text-sea-700 underline" rel="noopener sponsored">Wal-Dokumentationen (BBC)</a>
+      <p class="text-xs text-gray-500 mt-1"><strong>Anzeige</strong> · Amazon.de</p>
     </li>
     <li class="bg-white border border-sea-200 rounded p-3 text-sm">
-      <a href="https://www.amazon.de/s?k=kinderbuch+wal&amp;tag=AMAZON_TAG_PLACEHOLDER-21" class="font-medium text-sea-700 underline" rel="noopener sponsored">Kinderbücher über Wale</a>
-      <p class="text-xs text-gray-500 mt-1">Affiliate-Link zu Amazon.de</p>
+      <a href="https://www.amazon.de/s?k=kinderbuch+wal&amp;tag=timmywal-21" class="font-medium text-sea-700 underline" rel="noopener sponsored">Kinderbücher über Wale</a>
+      <p class="text-xs text-gray-500 mt-1"><strong>Anzeige</strong> · Amazon.de</p>
     </li>
   </ul>
-  <p class="text-xs text-gray-500 mt-3"><em>Hinweis:</em> Als Amazon-Partner verdient diese Seite an qualifizierten Käufen. Platzhalter — bei Freischaltung Tag ersetzen.</p>
+  <p class="text-xs text-gray-500 mt-3"><em>Werbehinweis:</em> Als Amazon-Partner verdient der Betreiber dieser Seite an qualifizierten Käufen. Für Sie entstehen dadurch keine Mehrkosten.</p>
 </section>
 
-<!-- AD SLOT 3: Inline Responsive -->
-<div class="ad-container max-w-5xl mx-auto px-4 py-4">
-  <aside class="ad-slot border border-dashed border-gray-400 text-center text-xs text-gray-600 py-8 rounded" aria-label="Werbung">
-    <span class="block uppercase tracking-wider">Anzeige</span>
-    <!-- AD SLOT 3: Inline Responsive — AdSense-Einheit hier einfügen -->
-  </aside>
-</div>
-
-<!-- UNTERSTÜTZEN -->
-<section id="unterstuetzen" class="bg-sea-500 text-white">
+<!-- TIERSCHUTZ-SPENDEN -->
+<section id="tierschutz" class="bg-sea-500 text-white">
   <div class="max-w-5xl mx-auto px-4 py-10">
-    <h2 class="text-2xl md:text-3xl font-bold mb-3">Unterstützen</h2>
-
-    <p class="text-sea-50 mb-6 max-w-3xl support-placeholder">Diese Seite ist privat betrieben. Wer die laufende Pflege unterstützen möchte:</p>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 max-w-2xl support-placeholder">
-      <a href="https://ko-fi.com/KOFI_USERNAME_PLACEHOLDER" class="block bg-white text-sea-900 rounded-lg p-5 hover:shadow-lg transition" rel="noopener">
-        <h3 class="font-semibold mb-1">Ko-fi</h3>
-        <p class="text-sm text-sea-700">Einmalige Kaffee-Spende für die Redaktion.</p>
-        <span class="text-xs text-sea-500 mt-2 inline-block">→ ko-fi.com (Platzhalter)</span>
-      </a>
-      <a href="https://paypal.me/PAYPAL_USERNAME_PLACEHOLDER" class="block bg-white text-sea-900 rounded-lg p-5 hover:shadow-lg transition" rel="noopener">
-        <h3 class="font-semibold mb-1">PayPal</h3>
-        <p class="text-sm text-sea-700">Direkte Überweisung ohne Gebühr im Freundes-Modus.</p>
-        <span class="text-xs text-sea-500 mt-2 inline-block">→ paypal.me (Platzhalter)</span>
-      </a>
-    </div>
-
-    <h3 class="font-semibold text-white mb-3">An Tierschutz-Organisationen spenden</h3>
-    <p class="text-sea-50 text-sm mb-4 max-w-3xl">Direkte „Rettung" von Timmy durch Einzelpersonen ist nicht möglich. Wer etwas für Meeressäuger tun möchte, kann hier spenden:</p>
+    <h2 class="text-2xl md:text-3xl font-bold mb-3">Tierschutz-Organisationen</h2>
+    <p class="text-sea-50 text-sm mb-6 max-w-3xl">Eine direkte „Rettung" von Timmy durch Einzelpersonen ist nicht möglich. Wer etwas für Meeressäuger tun möchte, kann bei den Organisationen spenden, die seit Jahren im Wal- und Meeresschutz aktiv sind:</p>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
       <a href="https://www.ifaw.org/de/ifaw-unterstuetzen" class="block bg-sea-900/30 border border-sea-700/40 rounded-lg p-4 hover:bg-sea-900/50 transition" rel="noopener">
         <h4 class="font-semibold">IFAW Deutschland</h4>
@@ -483,7 +447,7 @@
         <p class="text-sm text-sea-100 mt-1">Wissenschaftliche Meeresforschung</p>
       </a>
     </div>
-    <p class="text-xs text-sea-50 mt-6">Diese Organisationen sind nicht die Betreiber dieser Seite. Bitte prüfen Sie vor einer Spende die aktuellen Projekte auf den jeweiligen Websites.</p>
+    <p class="text-xs text-sea-50 mt-6">Diese Organisationen sind nicht Betreiber dieser Seite. Bitte prüfen Sie vor einer Spende die aktuellen Projekte auf den jeweiligen Websites. Diese Seite selbst sammelt keine Spenden.</p>
   </div>
 </section>
 
@@ -524,12 +488,12 @@
     </ul>
 
     <div class="border-t border-sea-700 mt-10 pt-6 text-xs text-sea-200 space-y-2">
-      <p><strong class="text-white">Redaktionelle Sorgfalt:</strong> Alle Faktenaussagen sind mit Quellen belegt. Unsichere Punkte sind als solche markiert. Die Lage ändert sich täglich.</p>
+      <p><strong class="text-white">Sorgfalt:</strong> Alle Faktenaussagen sind mit Quellen belegt. Unsichere Punkte sind als solche markiert. Die Lage ändert sich täglich. Diese Seite ist ein privates Informationsangebot, keine journalistische Redaktion.</p>
       <p><strong class="text-white">Bildrechte:</strong> Diese Seite zeigt keine eigenen Fotos. Alle visuellen Inhalte befinden sich auf den verlinkten Quellseiten; Rechte liegen bei den jeweiligen Anbietern.</p>
       <p class="pt-4 flex flex-wrap gap-4">
         <a href="impressum.html" class="underline text-white">Impressum</a>
         <a href="datenschutz.html" class="underline text-white">Datenschutz</a>
-        <a href="#unterstuetzen" class="underline">Unterstützen</a>
+        <a href="#tierschutz" class="underline">Tierschutz</a>
       </p>
     </div>
   </div>
@@ -537,28 +501,24 @@
 
 </main>
 
-<!-- Einfacher Consent-Platzhalter — im Produktivbetrieb durch CMP ersetzen -->
-<div id="consent-placeholder" class="fixed bottom-4 right-4 left-4 md:left-auto md:max-w-md bg-white border border-sea-300 rounded-lg shadow-lg p-4 text-sm z-50 hidden" role="dialog" aria-label="Cookie-Einwilligung">
-  <p class="text-sea-900 mb-3">Diese Seite kann Werbung einblenden, die Cookies setzt. Mit „Einverstanden" stimmen Sie der Nutzung gemäß unseren <a href="datenschutz.html" class="underline">Datenschutzhinweisen</a> zu.</p>
-  <div class="flex gap-2">
-    <button type="button" id="consent-accept" class="bg-sea-700 text-white rounded px-3 py-1 text-sm">Einverstanden</button>
-    <button type="button" id="consent-reject" class="border border-sea-300 rounded px-3 py-1 text-sm">Nur notwendige</button>
-  </div>
-</div>
-
 <script>
-  // Consent-Banner (Platzhalter — produktiv CMP einsetzen)
-  if (!localStorage.getItem('timmy_consent')) {
-    const el = document.getElementById('consent-placeholder');
-    if (el) el.classList.remove('hidden');
-    ['consent-accept','consent-reject'].forEach(id => {
-      const b = document.getElementById(id);
-      if (b) b.addEventListener('click', () => {
-        localStorage.setItem('timmy_consent', id === 'consent-accept' ? 'accept' : 'reject');
-        document.getElementById('consent-placeholder').remove();
-      });
+  // Mobile-Navigation Toggle
+  (function() {
+    const btn = document.getElementById('mobile-nav-toggle');
+    const nav = document.getElementById('mobile-nav');
+    if (!btn || !nav) return;
+    btn.addEventListener('click', () => {
+      const open = !nav.classList.contains('hidden');
+      nav.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!open));
+      btn.setAttribute('aria-label', open ? 'Menü öffnen' : 'Menü schließen');
     });
-  }
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      nav.classList.add('hidden');
+      btn.setAttribute('aria-expanded', 'false');
+      btn.setAttribute('aria-label', 'Menü öffnen');
+    }));
+  })();
 
   // Live-Ticker aus updates.json
   (async function loadTicker() {
@@ -587,7 +547,6 @@
             <time class="text-xs text-gray-500" datetime="${escapeHtml(e.timestamp || '')}">${formatDate(e.timestamp)}</time>
           </div>
           <h3 class="font-semibold text-sea-900 text-sm mb-1">${escapeHtml(e.title || '')}</h3>
-          ${e.summary ? `<p class="text-sm text-sea-700">${escapeHtml(e.summary)}</p>` : ''}
           ${e.url ? `<a href="${escapeHtml(e.url)}" class="text-xs text-sea-500 underline mt-1 inline-block" rel="noopener">Zur Originalmeldung →</a>` : ''}
         </article>
       `).join('');
@@ -599,5 +558,7 @@
   })();
 </script>
 
+<script data-goatcounter="https://timmy-wal.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

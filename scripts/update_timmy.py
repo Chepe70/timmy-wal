@@ -10,7 +10,8 @@ Quellen:
 - Deutsches Meeresmuseum Fachseite
 - Nordkurier / NDR (falls zugaenglich)
 
-Zitatrechtliche Leitlinie: Pro Eintrag nur Ueberschrift + 1 Zeile + Quell-URL.
+Zitatrechtliche Leitlinie: Pro Eintrag nur Ueberschrift + Quell-URL.
+Kein Summary/Teaser mehr — vermeidet Konflikt mit Presse-Leistungsschutzrecht (§ 87f UrhG).
 """
 from __future__ import annotations
 import hashlib
@@ -43,7 +44,6 @@ HEADERS = {"User-Agent": USER_AGENT, "Accept-Language": "de-DE,de;q=0.9"}
 TIMEOUT = 20
 
 MAX_ENTRIES = 30
-SUMMARY_MAX = 220
 
 
 def fetch(url: str) -> str | None:
@@ -58,14 +58,6 @@ def fetch(url: str) -> str | None:
 
 def clean(text: str) -> str:
     return re.sub(r"\s+", " ", (text or "")).strip()
-
-
-def shorten(text: str, limit: int = SUMMARY_MAX) -> str:
-    text = clean(text)
-    if len(text) <= limit:
-        return text
-    cut = text[:limit].rsplit(" ", 1)[0]
-    return cut + " …"
 
 
 def make_id(source: str, title: str, url: str) -> str:
@@ -96,13 +88,6 @@ def scrape_zdf_liveblog() -> list[dict]:
             continue
         seen_titles.add(title)
 
-        summary = ""
-        for p in node.find_all("p", limit=3):
-            s = clean(p.get_text())
-            if s and s != title and len(s) > 40:
-                summary = shorten(s)
-                break
-
         time_el = node.find("time")
         ts = None
         if time_el and time_el.has_attr("datetime"):
@@ -111,7 +96,6 @@ def scrape_zdf_liveblog() -> list[dict]:
         entries.append({
             "source": "ZDFheute Liveblog",
             "title": title,
-            "summary": summary,
             "url": url,
             "timestamp": ts or datetime.now(timezone.utc).isoformat(timespec="seconds"),
         })
@@ -138,14 +122,9 @@ def scrape_meeresmuseum() -> list[dict]:
         title = clean(h.get_text())
         if not title or not re.search(r"(timmy|wal|buckelwal|ostsee|update)", title, re.I):
             continue
-        summary = ""
-        nxt = h.find_next("p")
-        if nxt:
-            summary = shorten(clean(nxt.get_text()))
         entries.append({
             "source": "Dt. Meeresmuseum",
             "title": title,
-            "summary": summary,
             "url": url,
             "timestamp": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         })
@@ -177,7 +156,6 @@ def scrape_nordkurier() -> list[dict]:
         entries.append({
             "source": "Nordkurier",
             "title": title,
-            "summary": "",
             "url": full,
             "timestamp": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         })
