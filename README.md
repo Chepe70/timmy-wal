@@ -1,4 +1,6 @@
-# wal-timmy.de
+# timmy-wal.de
+
+> Domain-Hinweis: `wal-timmy.de` wurde bereits am 22.04.2026 von Dritten registriert. Wir verwenden daher `timmy-wal.de` (umgekehrte Wortstellung).
 
 Informations-Seite zum in der Ostsee gestrandeten Buckelwal „Timmy".
 
@@ -14,7 +16,7 @@ Eine seriöse, laufend aktualisierte Informationsseite: Chronologie, Rettungspla
 ├── impressum.html             Impressum (Platzhalter)
 ├── datenschutz.html           Datenschutz (Platzhalter)
 ├── updates.json               Ticker-Daten (vom Workflow überschrieben)
-├── CNAME                      wal-timmy.de (GitHub Pages)
+├── CNAME                      timmy-wal.de (GitHub Pages)
 ├── scripts/
 │   └── update_timmy.py        Scraper: ZDFheute + Meeresmuseum + Nordkurier
 ├── requirements.txt           Python-Abhängigkeiten
@@ -33,12 +35,12 @@ python -m http.server 8000       # index.html unter http://localhost:8000
 ## Deployment
 
 - **Hosting:** GitHub Pages (HTTPS automatisch via Let's Encrypt)
-- **Domain:** `wal-timmy.de` (CNAME-Datei im Repo)
+- **Domain:** `timmy-wal.de` (CNAME-Datei im Repo)
 - **Updates:** GitHub Actions, stündlich
 
 ## TODO vor Live-Gang
 
-- [ ] Domain `wal-timmy.de` registrieren und DNS auf GitHub Pages zeigen lassen
+- [ ] Domain `timmy-wal.de` registrieren und DNS auf GitHub Pages zeigen lassen
   - Apex (A-Records): `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
   - www-CNAME: `chepe70.github.io`
 - [ ] Impressum-Service-Adresse bestellen, in `impressum.html` eintragen
