@@ -1,11 +1,25 @@
 {
-  "generated_at": "2026-04-24T13:30:14+00:00",
+  "generated_at": "2026-04-24T15:24:39+00:00",
   "source_check": [
     "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
     "https://www.deutsches-meeresmuseum.de/wissenschaft/sichtungen/buckelwal-in-der-ostsee",
     "https://www.nordkurier.de/suche?q=timmy+wal"
   ],
   "entries": [
+    {
+      "source": "ZDFheute Liveblog",
+      "title": "Backhaus: Zeitfenster für Rettung beginnt, sich zu schließen",
+      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
+      "timestamp": "2026-04-24T15:24:37+00:00",
+      "id": "919f1d53aef3"
+    },
+    {
+      "source": "ZDFheute Liveblog",
+      "title": "19 Eilanträge zum Wal beim Verwaltungsgericht",
+      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
+      "timestamp": "2026-04-24T15:24:37+00:00",
+      "id": "7059bb4187f3"
+    },
     {
       "source": "ZDFheute Liveblog",
       "title": "Umweltministerium prüft neuen Rettungsplan",
