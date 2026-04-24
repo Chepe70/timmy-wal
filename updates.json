@@ -1,11 +1,18 @@
 {
-  "generated_at": "2026-04-24T06:34:52+00:00",
+  "generated_at": "2026-04-24T11:23:42+00:00",
   "source_check": [
     "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
     "https://www.deutsches-meeresmuseum.de/wissenschaft/sichtungen/buckelwal-in-der-ostsee",
     "https://www.nordkurier.de/suche?q=timmy+wal"
   ],
   "entries": [
+    {
+      "source": "ZDFheute Liveblog",
+      "title": "Geschwächter Buckelwal: Rettung weiter offen",
+      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
+      "timestamp": "2026-04-24T11:23:39+00:00",
+      "id": "9bbb01fa3a34"
+    },
     {
       "source": "ZDFheute Liveblog",
       "title": "Planungen für die Wal-Rettung laufen weiter",
