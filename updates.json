@@ -1,11 +1,18 @@
 {
-  "generated_at": "2026-04-24T11:23:42+00:00",
+  "generated_at": "2026-04-24T12:16:31+00:00",
   "source_check": [
     "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
     "https://www.deutsches-meeresmuseum.de/wissenschaft/sichtungen/buckelwal-in-der-ostsee",
     "https://www.nordkurier.de/suche?q=timmy+wal"
   ],
   "entries": [
+    {
+      "source": "ZDFheute Liveblog",
+      "title": "Geldgeber Gunz will weiter Wal-Transport \"bis zum Ende\"",
+      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
+      "timestamp": "2026-04-24T12:16:29+00:00",
+      "id": "28df4fa4a35e"
+    },
     {
       "source": "ZDFheute Liveblog",
       "title": "Geschwächter Buckelwal: Rettung weiter offen",
