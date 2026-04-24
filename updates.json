@@ -1,11 +1,18 @@
 {
-  "generated_at": "2026-04-24T15:24:39+00:00",
+  "generated_at": "2026-04-24T21:15:14+00:00",
   "source_check": [
     "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
     "https://www.deutsches-meeresmuseum.de/wissenschaft/sichtungen/buckelwal-in-der-ostsee",
     "https://www.nordkurier.de/suche?q=timmy+wal"
   ],
   "entries": [
+    {
+      "source": "ZDFheute Liveblog",
+      "title": "Möglicherweise neuer Rettungsversuch am Wochenende",
+      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
+      "timestamp": "2026-04-24T21:15:11+00:00",
+      "id": "7012cacd046c"
+    },
     {
       "source": "ZDFheute Liveblog",
       "title": "Backhaus: Zeitfenster für Rettung beginnt, sich zu schließen",
