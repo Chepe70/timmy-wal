@@ -1,11 +1,18 @@
 {
-  "generated_at": "2026-04-25T08:17:25+00:00",
+  "generated_at": "2026-04-25T09:17:02+00:00",
   "source_check": [
     "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
     "https://www.deutsches-meeresmuseum.de/wissenschaft/sichtungen/buckelwal-in-der-ostsee",
     "https://www.nordkurier.de/suche?q=timmy+wal"
   ],
   "entries": [
+    {
+      "source": "ZDFheute Liveblog",
+      "title": "\"Deutschlands Lieblingswal\": Wie im Ausland berichtet wird",
+      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
+      "timestamp": "2026-04-25T09:16:59+00:00",
+      "id": "1493684d8b64"
+    },
     {
       "source": "ZDFheute Liveblog",
       "title": "Der Wal verharrt weiter vor Poel",
