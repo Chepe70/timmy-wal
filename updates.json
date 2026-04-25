@@ -1,11 +1,18 @@
 {
-  "generated_at": "2026-04-25T11:14:23+00:00",
+  "generated_at": "2026-04-25T13:27:06+00:00",
   "source_check": [
     "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
     "https://www.deutsches-meeresmuseum.de/wissenschaft/sichtungen/buckelwal-in-der-ostsee",
     "https://www.nordkurier.de/suche?q=timmy+wal"
   ],
   "entries": [
+    {
+      "source": "ZDFheute Liveblog",
+      "title": "Neues Rettungskonzept wird geduldet",
+      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
+      "timestamp": "2026-04-25T13:27:03+00:00",
+      "id": "c3438b459804"
+    },
     {
       "source": "ZDFheute Liveblog",
       "title": "Rettungsrinne soll heute fertig werden",
