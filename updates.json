@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-26T07:51:22+00:00",
-  "last_picked_source": "t-online",
+  "generated_at": "2026-04-26T08:34:03+00:00",
+  "last_picked_source": "BILD",
   "sources": [
     "ZDFheute Liveblog",
     "NDR",
@@ -91,6 +91,14 @@
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSzhUYk5VVHpXRzNzRWVJeUY4RGRjWlcyY1hYV2tiakNpclQ4ZFZtWUJ4TGVuSjdQRTNpbE9QYU1ZU3BidWVsVFNTc3ZqVVBQSTR2cHhYOUtMX2NtcmlyYlZXYnpnbjdYZFNRRWNuUWZSZDNEcWxzY0xrX3VmWmVqM0JoaXJZLWJ1ZldPMW9rUG9QRW4teXdHbzlPN0ROMjhELUtndmNUblN5VXVsOFlHaWdMLWpvb0k?oc=5",
       "timestamp": "2026-04-25T15:39:55+00:00",
       "id": "17beaff02651"
+    },
+    {
+      "source": "BILD",
+      "tier": "boulevard",
+      "title": "Tierärztin erklärt Verfahren: So nehme ich Timmy Blut ab",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUGRPdFJCckpBNE43TW1VWGZjczlwM241Tk1UWmk2WHozUHVRV09MVFp6YUpFZEMyV0ZDUFFVeWpWalB1OXZmZU9BWVFsTXphdUtCWkVDS0hILXdaSjZlV2lGdndMZHQzVDFibk1abGdlSnE3NHRzUERDZlhCUVhwN1dOcE4wU0x2d1pnU29aRXdteUxJR2FZcUVHdTBYOWI3WDZxMjBRUmw3SFk?oc=5",
+      "timestamp": "2026-04-25T15:33:31+00:00",
+      "id": "0f06ddab52a4"
     }
   ]
 }
