@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-26T06:45:51+00:00",
-  "last_picked_source": "BILD",
+  "generated_at": "2026-04-26T07:08:13+00:00",
+  "last_picked_source": "ZDFheute Liveblog",
   "sources": [
     "ZDFheute Liveblog",
     "NDR",
@@ -13,6 +13,14 @@
   ],
   "entries": [
     {
+      "source": "ZDFheute Liveblog",
+      "tier": "primary",
+      "title": "Sandsäcke zum Wal gebracht",
+      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
+      "timestamp": "2026-04-26T07:08:13+00:00",
+      "id": "832e58fe70a4"
+    },
+    {
       "source": "t-online",
       "tier": "quality",
       "title": "Ständig Menschen direkt am WalRuhig wirkender Wal im Trubel - Was fühlt er wirklich?",
@@ -21,12 +29,12 @@
       "id": "7cdbb761f8ba"
     },
     {
-      "source": "NDR",
+      "source": "ZDFheute Liveblog",
       "tier": "primary",
-      "title": "Ostsee-Wal vor Poel: Transport-Schute soll heute eintreffen",
-      "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/ostsee-wal-vor-poel-transport-schute-soll-am-sonntag-eintreffen,wal-180.html",
-      "timestamp": "2026-04-26T06:33:38+00:00",
-      "id": "abf1ca68ccab"
+      "title": "19 Eilanträge zum Wal beim Verwaltungsgericht",
+      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
+      "timestamp": "2026-04-26T07:08:13+00:00",
+      "id": "7059bb4187f3"
     },
     {
       "source": "t-online",
@@ -37,12 +45,12 @@
       "id": "2850c2674963"
     },
     {
-      "source": "NDR",
+      "source": "ZDFheute Liveblog",
       "tier": "primary",
-      "title": "Der gestrandete Wal in der Kirchsee vor Poel im Livestream",
-      "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/der-gestrandete-wal-in-der-kirchsee-vor-poel-im-livestream,eventlivestream-336.html",
-      "timestamp": "2026-04-26T06:33:38+00:00",
-      "id": "fa7546ab14b3"
+      "title": "Der Wal verharrt weiter vor Poel",
+      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
+      "timestamp": "2026-04-26T07:08:13+00:00",
+      "id": "0d3cd88d5bf9"
     },
     {
       "source": "t-online",
@@ -53,12 +61,12 @@
       "id": "af7aef5e431f"
     },
     {
-      "source": "ZDFheute Liveblog",
+      "source": "NDR",
       "tier": "primary",
-      "title": "Sandsäcke zum Wal gebracht",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-26T06:29:49+00:00",
-      "id": "832e58fe70a4"
+      "title": "Ostsee-Wal vor Poel: Transport-Schute soll heute eintreffen",
+      "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/ostsee-wal-vor-poel-transport-schute-soll-am-sonntag-eintreffen,wal-180.html",
+      "timestamp": "2026-04-26T06:33:38+00:00",
+      "id": "abf1ca68ccab"
     },
     {
       "source": "BILD",
@@ -67,6 +75,14 @@
       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPT0k5NXpkWUNtWkp2cHZwS1djbjl6YzFzMV9MM2V2dHFsV0JYU3pZc3VaRS1aLVlQek1URE5WSm5LcDh1dUVTdjJGWHg2NGRPYkxCdjZpZjQyR2V3OFA2c0w4VjFGR3ZUel9NTW55eEFGUHhLZ21sQ1dnZF9jYXNmaEkxTDRsdHhKcGt4ekJ5U1VUek4yX2lFT1ROQXRXZ0d3azRKUVNITUZsS1lvMlhtSmxxamhuU1lQX014WUhWSEo?oc=5",
       "timestamp": "2026-04-26T06:29:00+00:00",
       "id": "b3f2a3c1df28"
+    },
+    {
+      "source": "NDR",
+      "tier": "primary",
+      "title": "Der gestrandete Wal in der Kirchsee vor Poel im Livestream",
+      "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/der-gestrandete-wal-in-der-kirchsee-vor-poel-im-livestream,eventlivestream-336.html",
+      "timestamp": "2026-04-26T06:33:38+00:00",
+      "id": "fa7546ab14b3"
     },
     {
       "source": "IFAW",
