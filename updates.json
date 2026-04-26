@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-26T09:32:57+00:00",
-  "last_picked_source": "NDR",
+  "generated_at": "2026-04-26T10:01:56+00:00",
+  "last_picked_source": "t-online",
   "sources": [
     "ZDFheute Liveblog",
     "NDR",
@@ -19,6 +19,22 @@
       "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
       "timestamp": "2026-04-26T09:03:49+00:00",
       "id": "0d3cd88d5bf9"
+    },
+    {
+      "source": "t-online",
+      "tier": "quality",
+      "title": "Haie fressen toten Wal vor australischer Küste",
+      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101229440/alarm-in-australien-wal-zieht-gefaehrliche-haie-an-straende-gesperrt.html",
+      "timestamp": "2026-04-26T08:01:36+00:00",
+      "id": "6a736bf9acd3"
+    },
+    {
+      "source": "ZDFheute Liveblog",
+      "tier": "primary",
+      "title": "Geldgeber Gunz will weiter Wal-Transport \"bis zum Ende\"",
+      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
+      "timestamp": "2026-04-26T09:03:49+00:00",
+      "id": "28df4fa4a35e"
     },
     {
       "source": "NDR",
@@ -45,12 +61,12 @@
       "id": "abf1ca68ccab"
     },
     {
-      "source": "ZDFheute Liveblog",
+      "source": "IFAW",
       "tier": "primary",
-      "title": "Geldgeber Gunz will weiter Wal-Transport \"bis zum Ende\"",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-26T09:03:49+00:00",
-      "id": "28df4fa4a35e"
+      "title": "FAQ: Gestrandeter Buckelwal in der Ostsee März/April 2026",
+      "url": "https://www.ifaw.org/de/aktuelles/buckelwal-ostsee-2026",
+      "timestamp": "2026-04-26T06:20:15+00:00",
+      "id": "09388a8ec371"
     },
     {
       "source": "NDR",
@@ -59,14 +75,6 @@
       "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/der-gestrandete-wal-in-der-kirchsee-vor-poel-im-livestream,eventlivestream-336.html",
       "timestamp": "2026-04-26T07:12:41+00:00",
       "id": "fa7546ab14b3"
-    },
-    {
-      "source": "IFAW",
-      "tier": "primary",
-      "title": "FAQ: Gestrandeter Buckelwal in der Ostsee März/April 2026",
-      "url": "https://www.ifaw.org/de/aktuelles/buckelwal-ostsee-2026",
-      "timestamp": "2026-04-26T06:20:15+00:00",
-      "id": "09388a8ec371"
     },
     {
       "source": "t-online",
@@ -87,10 +95,10 @@
     {
       "source": "t-online",
       "tier": "quality",
-      "title": "Transportkahn soll Buckelwal in die Nordsee bringen",
-      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101229234/transportkahn-soll-buckelwal-in-die-nordsee-bringen.html",
-      "timestamp": "2026-04-26T02:00:52+00:00",
-      "id": "af7aef5e431f"
+      "title": "Ständig Menschen direkt am WalRuhig wirkender Wal im Trubel - Was fühlt er wirklich?",
+      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101229252/ruhig-wirkender-wal-im-trubel-was-fuehlt-er-wirklich-.html",
+      "timestamp": "2026-04-26T02:03:33+00:00",
+      "id": "7cdbb761f8ba"
     },
     {
       "source": "BILD",
@@ -99,14 +107,6 @@
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSzhUYk5VVHpXRzNzRWVJeUY4RGRjWlcyY1hYV2tiakNpclQ4ZFZtWUJ4TGVuSjdQRTNpbE9QYU1ZU3BidWVsVFNTc3ZqVVBQSTR2cHhYOUtMX2NtcmlyYlZXYnpnbjdYZFNRRWNuUWZSZDNEcWxzY0xrX3VmWmVqM0JoaXJZLWJ1ZldPMW9rUG9QRW4teXdHbzlPN0ROMjhELUtndmNUblN5VXVsOFlHaWdMLWpvb0k?oc=5",
       "timestamp": "2026-04-25T15:39:55+00:00",
       "id": "17beaff02651"
-    },
-    {
-      "source": "t-online",
-      "tier": "quality",
-      "title": "Ständig Menschen direkt am WalRuhig wirkender Wal im Trubel - Was fühlt er wirklich?",
-      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101229252/ruhig-wirkender-wal-im-trubel-was-fuehlt-er-wirklich-.html",
-      "timestamp": "2026-04-26T02:03:33+00:00",
-      "id": "7cdbb761f8ba"
     },
     {
       "source": "BILD",
