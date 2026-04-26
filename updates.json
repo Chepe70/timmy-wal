@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-26T14:05:32+00:00",
-  "last_picked_source": "NDR",
+  "generated_at": "2026-04-26T16:07:51+00:00",
+  "last_picked_source": "ZDFheute Liveblog",
   "sources": [
     "ZDFheute Liveblog",
     "NDR",
@@ -13,6 +13,14 @@
   ],
   "entries": [
     {
+      "source": "ZDFheute Liveblog",
+      "tier": "primary",
+      "title": "Lastkahn ist unterwegs - Wal-Transport am Dienstag?",
+      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
+      "timestamp": "2026-04-26T16:07:51+00:00",
+      "id": "483fd19da717"
+    },
+    {
       "source": "NDR",
       "tier": "primary",
       "title": "Ostsee-Wal vor Poel: Transport-Schute auf dem Weg",
@@ -23,10 +31,10 @@
     {
       "source": "ZDFheute Liveblog",
       "tier": "primary",
-      "title": "Der Wal verharrt weiter vor Poel",
+      "title": "Geschwächter Buckelwal: Rettung weiter offen",
       "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-26T13:36:09+00:00",
-      "id": "0d3cd88d5bf9"
+      "timestamp": "2026-04-26T16:07:51+00:00",
+      "id": "9bbb01fa3a34"
     },
     {
       "source": "t-online",
@@ -39,10 +47,10 @@
     {
       "source": "ZDFheute Liveblog",
       "tier": "primary",
-      "title": "19 Eilanträge zum Wal beim Verwaltungsgericht",
+      "title": "Sandsäcke zum Wal gebracht",
       "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-26T13:36:09+00:00",
-      "id": "7059bb4187f3"
+      "timestamp": "2026-04-26T16:07:51+00:00",
+      "id": "832e58fe70a4"
     },
     {
       "source": "NDR",
@@ -53,12 +61,12 @@
       "id": "2be2acfa0bd7"
     },
     {
-      "source": "ZDFheute Liveblog",
+      "source": "IFAW",
       "tier": "primary",
-      "title": "Geldgeber Gunz will weiter Wal-Transport \"bis zum Ende\"",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-26T13:36:09+00:00",
-      "id": "28df4fa4a35e"
+      "title": "FAQ: Gestrandeter Buckelwal in der Ostsee März/April 2026",
+      "url": "https://www.ifaw.org/de/aktuelles/buckelwal-ostsee-2026",
+      "timestamp": "2026-04-26T06:20:15+00:00",
+      "id": "09388a8ec371"
     },
     {
       "source": "NDR",
@@ -67,14 +75,6 @@
       "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/ostsee-wal-vor-poel-transport-schute-soll-am-sonntag-eintreffen,wal-180.html",
       "timestamp": "2026-04-26T07:16:58+00:00",
       "id": "94dc166d4f8f"
-    },
-    {
-      "source": "IFAW",
-      "tier": "primary",
-      "title": "FAQ: Gestrandeter Buckelwal in der Ostsee März/April 2026",
-      "url": "https://www.ifaw.org/de/aktuelles/buckelwal-ostsee-2026",
-      "timestamp": "2026-04-26T06:20:15+00:00",
-      "id": "09388a8ec371"
     },
     {
       "source": "t-online",
