@@ -540,16 +540,26 @@
         return;
       }
 
-      container.innerHTML = data.entries.slice(0, 10).map(e => `
+      container.innerHTML = data.entries.slice(0, 10).map(e => {
+        const tierBadge = e.tier === 'boulevard'
+          ? '<span class="text-[10px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-amber-100 text-amber-800 border border-amber-200" title="Boulevardpresse — Tonalität ggf. zugespitzt">Boulevard</span>'
+          : e.tier === 'regional'
+            ? '<span class="text-[10px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-sea-100 text-sea-700 border border-sea-200">Regional</span>'
+            : '';
+        return `
         <article class="bg-sea-50 border border-sea-200 rounded-lg p-4">
           <div class="flex items-start justify-between gap-3 mb-1">
-            <span class="text-xs uppercase tracking-wider text-sea-500 font-semibold">${escapeHtml(e.source || 'Quelle')}</span>
+            <div class="flex items-center gap-2 flex-wrap">
+              <span class="text-xs uppercase tracking-wider text-sea-500 font-semibold">${escapeHtml(e.source || 'Quelle')}</span>
+              ${tierBadge}
+            </div>
             <time class="text-xs text-gray-500" datetime="${escapeHtml(e.timestamp || '')}">${formatDate(e.timestamp)}</time>
           </div>
           <h3 class="font-semibold text-sea-900 text-sm mb-1">${escapeHtml(e.title || '')}</h3>
           ${e.url ? `<a href="${escapeHtml(e.url)}" class="text-xs text-sea-500 underline mt-1 inline-block" rel="noopener">Zur Originalmeldung →</a>` : ''}
         </article>
-      `).join('');
+        `;
+      }).join('');
     } catch (err) {
       container.innerHTML = '<div class="text-sm text-amber-700">Ticker konnte nicht geladen werden. Bitte später erneut probieren oder <a class="underline" href="https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html" rel="noopener">ZDFheute-Liveblog direkt</a> aufrufen.</div>';
     }

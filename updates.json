@@ -1,206 +1,256 @@
 {
-  "generated_at": "2026-04-25T13:27:06+00:00",
-  "source_check": [
-    "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-    "https://www.deutsches-meeresmuseum.de/wissenschaft/sichtungen/buckelwal-in-der-ostsee",
-    "https://www.nordkurier.de/suche?q=timmy+wal"
+  "generated_at": "2026-04-26T06:24:37+00:00",
+  "last_picked_source": "Nordkurier",
+  "sources": [
+    "ZDFheute Liveblog",
+    "NDR",
+    "t-online",
+    "BILD",
+    "Tagesschau",
+    "Nordkurier",
+    "Dt. Meeresmuseum",
+    "IFAW"
   ],
   "entries": [
     {
-      "source": "ZDFheute Liveblog",
-      "title": "Neues Rettungskonzept wird geduldet",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-25T13:27:03+00:00",
-      "id": "c3438b459804"
+      "source": "Nordkurier",
+      "tier": "regional",
+      "title": "100 Stunden bis in die Freiheit: Dieser Mann soll den Ostsee-Wal nach Hause bringen",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNWg2TmhKZ1V5NzB5bXBGTXozN0NFNXViQ19aLVh1UGdUQWpCWmJqZzFzOGNHNDhGS2t2ZVZqT3dwb3huVFpIR29sb3JPZWt0S1pobHhhblpnVUlnOHJZTmVwbFdMai1IY3hBcm4wc25FalhCMzdtOUFocTNIalpDdUR4d1R1UnpBdHFwTEpndUktQ1BndTZSR29FYXBWaDdfakF5LVdXZVdYTTFVZ2FxRFphMzgwRkI5WTkzZjFzcU1mTnp6OXNMeUFDNDE3R3EyZGNqLQ?oc=5",
+      "timestamp": "Wed, 22 Apr 2026 11:35:00 GMT",
+      "id": "4c42c8533fce"
     },
     {
-      "source": "ZDFheute Liveblog",
-      "title": "Rettungsrinne soll heute fertig werden",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-25T11:14:20+00:00",
-      "id": "2a83adb8181b"
+      "source": "Nordkurier",
+      "tier": "regional",
+      "title": "Ein Wal im Museum: das 15-Meter-Skelett, das Deutschlands Walforschung eröffnete",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPeXI1QnRDM09TRm1GNWl1MV94U1JnQ1I0TlEtZlJTOTRzN1JfQ2ZMLVlaUG9CLWxHY0hqZ3lENnRLNVVfVFBEZkpTSUdJQ0VUYi1PSHVuYmlKSEJhQzdUTG9ZLTlndEdTUjNPWkMxbjljQ0lTdEdlejMtSkk5VXZfWHdOdDJmUkpBZVdpS2dUcFlhTnA2RlFFc1J6d2F6T0pGNWI2Z0YwVVkySHZuX0JXNlZTbUxOdUd4QUlRVjlyN0pqZzg?oc=5",
+      "timestamp": "Wed, 22 Apr 2026 11:00:00 GMT",
+      "id": "e09eee553512"
     },
     {
-      "source": "ZDFheute Liveblog",
-      "title": "Sandsäcke zum Wal gebracht",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-25T10:13:36+00:00",
-      "id": "832e58fe70a4"
+      "source": "Nordkurier",
+      "tier": "regional",
+      "title": "Alle Augen auf Timmy – aber wie geht es seinen Artgenossen?",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVzBSMnF0WDRlZHJrVktJMXJWRGdxVXRqWlUzZm5pVlp1NUlRNzY4X3Y2QzUwQXhwaTM3ZW1BaUgzdmVKVDAtLWxOSERvNDd5c0hsYk0zSFlUQUloSU9jYVctQnhhUDktX2QzOHVyLV9jTFV6aW02NENJQ19mYTNNRnZqdUlGZVFOQmdMNmRtcmR1UFBiN1pYT0NpMTg4QnljNXZFaWVWQ3NEbVZoay1tQk9fd3BWa1JoZGhybFIxQQ?oc=5",
+      "timestamp": "Wed, 22 Apr 2026 02:02:00 GMT",
+      "id": "abcbb1cc8bab"
     },
     {
-      "source": "ZDFheute Liveblog",
-      "title": "\"Deutschlands Lieblingswal\": Wie im Ausland berichtet wird",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-25T09:16:59+00:00",
-      "id": "1493684d8b64"
+      "source": "Nordkurier",
+      "tier": "regional",
+      "title": "Satirisches Tool zu Buckelwal \"Timmy\": Über 130.000 Menschen klickten bereits den \"Wal-o-mat\"",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPUHdpV3FLTzlCTklGSXFERFpMNC1xSVN4R0dFNmZxZzBPNWJIVjZXRWhyMjladDBVU1pwOXVDdHFDdmdMeUw4TVNoXzE3LTRWclZkbFRSNzJZSmwtQUJvVmlmS2NYNEhVWE9WYUswZGJRQWIzNGlkSHcxNHdEQ2dDWUdCaElmdVB4NHgtWGxJWVJBeFVJQXpuRg?oc=5",
+      "timestamp": "Tue, 21 Apr 2026 13:11:00 GMT",
+      "id": "c2a4806f380a"
     },
     {
-      "source": "ZDFheute Liveblog",
-      "title": "Der Wal verharrt weiter vor Poel",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-25T08:17:23+00:00",
-      "id": "0d3cd88d5bf9"
+      "source": "Nordkurier",
+      "tier": "regional",
+      "title": "Wal „Timmy“ wartet auf Rettung Entscheidung steht weiter aus",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWVo5MGFLR0lLekpUbjNfZFRlZjUwSmdvZ3I0UVlzTXp4Y1ZnSWRfYU1YQlA5SmkwMzVrdTgyRUVqMnNPTmdZVXRjdlVHSko4eWs4dnVXRlJoYzlxVGoyWHl2NWZFQUdJelZOTE9EamNrcTEteWhtdFI4bDlsREIzeGFlR0F2SmlzOHF2M0Q1OGw0cUdnQ2w5Z1RxUTNTZUtXN2tTTVROVGFaT3Z4MWgw?oc=5",
+      "timestamp": "Thu, 23 Apr 2026 22:49:00 GMT",
+      "id": "d85087537063"
     },
     {
-      "source": "ZDFheute Liveblog",
-      "title": "Möglicherweise neuer Rettungsversuch am Wochenende",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-24T21:15:11+00:00",
-      "id": "7012cacd046c"
+      "source": "Nordkurier",
+      "tier": "regional",
+      "title": "Ein Wal vor unseren Stränden: warum Rückkehr so selten gelingt und Hoffnung bleibt",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPa3lqbl93eTlzUGJMZUN3MnAtU0djUGgyVDNCSUphSnUxVnh1QlBCU2xubGY2b2x3TTNUNkliWlFDSk54RTFqY1NuX1ZDeHhrekRmVFZobzRlanpndmN6Z3BxZ0lZUmxOZHI1cDRiRUZTa2ZTVTY3OGM0QzBjNHZvR0w4RDF0bFIteVRIcDNkbV9nZHhacWo3SlprS291SDhWTjE1SWt5WS04bVpiYktIMmlUN0pPZklJYnVyb3Q4VWU2dU93emhUWmhfNEQzZw?oc=5",
+      "timestamp": "Thu, 23 Apr 2026 15:36:00 GMT",
+      "id": "0a797b1f5c90"
     },
     {
-      "source": "ZDFheute Liveblog",
-      "title": "Backhaus: Zeitfenster für Rettung beginnt, sich zu schließen",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-24T15:24:37+00:00",
-      "id": "919f1d53aef3"
+      "source": "Nordkurier",
+      "tier": "regional",
+      "title": "Die vermeintlichen Retter des Ostsee-Wals: So ticken die ominösen Privathelfer",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQWDRqQmFOT0hDQnF5MVpLQVFqU25PTDl4eXd3djNmTlFXeXZ2aU9xVzlwV1dHRndIYzhhV3Vpb0pmOHRGajBVaGk3SmtyX1R6TnlaaHkxQl9oRXQ3b2F5d2Q2MVlnelg3TXd5c3Uxb2ZONXE5d2swZklTUVFHVm45RzVnamM0a3d2SllUNDRnU1RSSTlvVE1hZHFoenBTRnRPWUcyTzN3d3k2YWFtNkpsWGk3cnJyVHlSWXl0S2VqOHNVREc3T2RlMFQxUlhVR0NiU1J0Vy1tWTI?oc=5",
+      "timestamp": "Thu, 23 Apr 2026 14:23:00 GMT",
+      "id": "c6c92478c41d"
     },
     {
-      "source": "ZDFheute Liveblog",
-      "title": "19 Eilanträge zum Wal beim Verwaltungsgericht",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-24T15:24:37+00:00",
-      "id": "7059bb4187f3"
+      "source": "BILD",
+      "tier": "boulevard",
+      "title": "Tag 24 in der Bucht von Poel: Der Rettungsversuch für Timmy im Livestream",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQb2VEdlJjOTRpNk5maVFSUDM2MENBSC1kcVVoQkFtRnVMVUxPeUI0amE0Tk9XZ0dMRUxPNmJVaE0tNjBscjVHZ3hDY2U5V2JoVkFVOFRza0FBWWhzUElXTWNQNDh0NExfbzZJcGlCWXlQdGJWUU1LTHUxT3Y4MkpUU2daNE9heENpU1lqLTFxMEprUFBrMURyRHlxRXpuV1J0ZnJJSzh0WGxZNGtrU0lUMnVydGdfQWZTanNkdG1kbkk?oc=5",
+      "timestamp": "Thu, 23 Apr 2026 10:15:26 GMT",
+      "id": "3a52f2a99c75"
     },
     {
-      "source": "ZDFheute Liveblog",
-      "title": "Umweltministerium prüft neuen Rettungsplan",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-24T13:30:11+00:00",
-      "id": "2800c68ec7fa"
+      "source": "BILD",
+      "tier": "boulevard",
+      "title": "Buckelwal Timmy: Felix Bohnsack enthüllt Rettungsplan Richtung Nordsee",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQdUI5SVdiaFdXX3ZfelBqbzFQY19pRkRXV0c1Mms2MHVVbHl6bWgzNThHZ2lJLVJHaWJUeWdnTVF0R3NRY0FXcng0SjZXaTZVeFhtam1STmRJNWhaSnRCMjMxb0tSR19uNk1VNlBUX012VnViTmtidHR4eEI0VGNlNU1TdTZmUEJkNExxZXRpdzZ2WktVZVR4eVdIVlhHajhtUVVtMXk5bXVZMTg5bE1ENXk3YmxPUXlEMF9MYg?oc=5",
+      "timestamp": "Sat, 25 Apr 2026 18:45:26 GMT",
+      "id": "547c614bb965"
     },
     {
-      "source": "ZDFheute Liveblog",
-      "title": "Geldgeber Gunz will weiter Wal-Transport \"bis zum Ende\"",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-24T12:16:29+00:00",
-      "id": "28df4fa4a35e"
+      "source": "BILD",
+      "tier": "boulevard",
+      "title": "Tag 26 in der Bucht von Poel: Der Rettungsversuch für Timmy im Livestream",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPdHdaLU9UakZ1cWNOMHVibEV0c2ZQOTN5RnZGeEFoV1VpSFM1dmZ3b1NINWZjRkVMbWFfY3owR2E5TmY5SE54Y1Q5clFlZ2I4aGlRancxUS1XTUFNN0xFb3JvOTlCSUtpd3VzMG51Wm9DV1NnR2QwWndqV2NtRlBqNVlEVHR5QWhxcGVsT1ZSNER2X1ZKQk5ldlMwcW5NaVJ1U05kQ2taSHl2ZEl5SnJfUTZKQ1VBU1V4TEgtbEs2dkQ?oc=5",
+      "timestamp": "Sat, 25 Apr 2026 17:34:21 GMT",
+      "id": "a54b7fb9e08b"
     },
     {
-      "source": "ZDFheute Liveblog",
-      "title": "Geschwächter Buckelwal: Rettung weiter offen",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-24T11:23:39+00:00",
-      "id": "9bbb01fa3a34"
+      "source": "BILD",
+      "tier": "boulevard",
+      "title": "Wal Timmy: Till Backhaus zieht Bilanz zu Rettung und kontert Kritik",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSzhUYk5VVHpXRzNzRWVJeUY4RGRjWlcyY1hYV2tiakNpclQ4ZFZtWUJ4TGVuSjdQRTNpbE9QYU1ZU3BidWVsVFNTc3ZqVVBQSTR2cHhYOUtMX2NtcmlyYlZXYnpnbjdYZFNRRWNuUWZSZDNEcWxzY0xrX3VmWmVqM0JoaXJZLWJ1ZldPMW9rUG9QRW4teXdHbzlPN0ROMjhELUtndmNUblN5VXVsOFlHaWdMLWpvb0k?oc=5",
+      "timestamp": "Sat, 25 Apr 2026 15:39:55 GMT",
+      "id": "17beaff02651"
     },
     {
-      "source": "ZDFheute Liveblog",
-      "title": "Planungen für die Wal-Rettung laufen weiter",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-24T06:34:51+00:00",
-      "id": "1adef39b70c0"
+      "source": "BILD",
+      "tier": "boulevard",
+      "title": "Tierärztin erklärt Verfahren: So nehme ich Timmy Blut ab",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUGRPdFJCckpBNE43TW1VWGZjczlwM241Tk1UWmk2WHozUHVRV09MVFp6YUpFZEMyV0ZDUFFVeWpWalB1OXZmZU9BWVFsTXphdUtCWkVDS0hILXdaSjZlV2lGdndMZHQzVDFibk1abGdlSnE3NHRzUERDZlhCUVhwN1dOcE4wU0x2d1pnU29aRXdteUxJR2FZcUVHdTBYOWI3WDZxMjBRUmw3SFk?oc=5",
+      "timestamp": "Sat, 25 Apr 2026 15:33:31 GMT",
+      "id": "0f06ddab52a4"
     },
     {
-      "source": "ZDFheute Liveblog",
-      "title": "Wal liegt weiter im flachen Wasser",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-23T19:37:36+00:00",
-      "id": "a4f53a30daa9"
+      "source": "BILD",
+      "tier": "boulevard",
+      "title": "Sterben lassen oder retten?: Das denken die Deutschen wirklich über Timmy",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPZkJOZnNEZlZJcXpGanl1Vm82ZFZucWx3eDYwQS16cGtoQXljQ3pBZVl0NXk3NWM4eGVFUFRBbWY2d0hVSkJHNE5wVzhMR1JyYTBOaGZXcWhxZk55YUFYaVppVk4xTVFqNkJCWGJKLUlnR0FrdTRUdFRiVl9jQ2tfekltdXgteGZYeHpJaDdKTDNYWTFNMldwZjNlRHhXRjd0V3Z1RzJ6Ty1yblI3MmtieGZOOGRVR1lEUFk3ekUxbTFzNVpYT0FGZ3d3?oc=5",
+      "timestamp": "Sat, 25 Apr 2026 12:12:30 GMT",
+      "id": "a3741a919d0a"
     },
     {
-      "source": "Dt. Meeresmuseum",
-      "title": "„Forschungsstiftung Ostsee“ vergibt Preise an herausragende Nachwuchswissenschaftler*innen",
-      "url": "https://www.deutsches-meeresmuseum.de/wissenschaft/sichtungen/buckelwal-in-der-ostsee",
-      "timestamp": "2026-04-23T17:55:51+00:00",
-      "id": "266fcd7441b1"
+      "source": "BILD",
+      "tier": "boulevard",
+      "title": "Nach 26 Tagen in der Bucht von Poel: Kann Timmy überhaupt noch schwimmen?",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQSklUN2dkblJRZzB2MW5jMWR4d0o1YjRzTUp3R3NCcW9UeUx4cU5JRUd3UWtoQk1VXzY5NVAwS0prVHExN1JDVURWTGYyVzJPOWJWQi1fLTd4NzlDaWcyTEQtTy13Y0cyRGhJSDllMWxCZWJ5eThkZUJMNXFNSTFnancyOUE2MVFZdlZ3OHhHbDYySmJUbWlnZzJGX3BYYkhvd253OTA3N1VKWTNhc2pjeEFwZHBxSWFZUnJlcmpyRE0ydGxNRG5MR0pweFFHNEczUUk4OWYxQXh0Q05IdjUzTTFrcw?oc=5",
+      "timestamp": "Sat, 25 Apr 2026 02:30:47 GMT",
+      "id": "281fe4b94ab8"
     },
     {
-      "source": "ZDFheute Liveblog",
-      "title": "Ministerium wartet auf neues Wal-Rettungskonzept",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-23T17:55:50+00:00",
-      "id": "e4a04ae15036"
+      "source": "BILD",
+      "tier": "boulevard",
+      "title": "Während Rettungsaktion um Wal Timmy: Im Hafenbecken von Poel wird ein Igel gefunden",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNazZSU1hiYlJIZW9RaVBoZU96V2Y3M3Bmc3k5THZBb0lTamh0WFQzSzZ3UHc4UTVoRGNyQzVwSzdYOE1HQmVQc3BOeHlXSGxCQVNxM3AyNGhKb0RMRk1ManAyc1RRQ29RTkRXTjhBb3A4UWdUOUI4OFpra2ZuQ1NVUndFTWhRWVRuZDZZdU5COGl4T3hqWVdmc2JnMEdkYzlGV251RjFmSXlQTmxWdVVCVUU0VF9IM29oYkhhME54YjZCWDUzS1pNQmxwcUwwXzludlFlMWotNVg?oc=5",
+      "timestamp": "Fri, 24 Apr 2026 20:16:44 GMT",
+      "id": "1436f658e911"
     },
     {
-      "source": "ZDFheute Liveblog",
-      "title": "Mindestens fünf Helfer beim Wal",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-23T17:55:50+00:00",
-      "id": "29059d634216"
+      "source": "Nordkurier",
+      "tier": "regional",
+      "title": "Ostsee-Wal trocknet langsam aus: Helfer geben zusätzliche Flüssigkeit",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPT2pBLXdvaFYtdnhYeXppUjdCSmY1SmxNNTQwTWstd3NhYkdqVHpsZktRRTBvTTFPNzQyNlBTRklXRmZSalpYOTVmZzNwTGdRS1JvMHVNUU83S09UZHctN21IUk9BU19VeVo5MDdHU19MTk1rV1ZWZnVVRzQ3OXUzOVo3ZEIzbXVxQnEzWU05RnhDMHlrMHByT2ZKNEdHX28teEF2OWlwSGduY3VRNTdIaHZmSlVQWkxPbjN0WU4xTTA3TFQ2ZHNHeS1wMFlvUQ?oc=5",
+      "timestamp": "Fri, 24 Apr 2026 18:35:00 GMT",
+      "id": "ee6239ff48ba"
     },
     {
-      "source": "ZDFheute Liveblog",
-      "title": "Neuer Rettungsplan: \"110 Meter lange Furche\"",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-23T17:55:50+00:00",
-      "id": "7123a6780cf5"
+      "source": "NDR",
+      "tier": "primary",
+      "title": "Ostsee-Wal vor Poel: Transport-Schute soll heute eintreffen",
+      "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/ostsee-wal-vor-poel-transport-schute-soll-am-sonntag-eintreffen,wal-180.html",
+      "timestamp": "2026-04-26T06:24:34+00:00",
+      "id": "abf1ca68ccab"
     },
     {
-      "source": "ZDFheute Liveblog",
-      "title": "Viel Trubel wegen Wal: \"Die Leute hier sind genervt\"",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-23T17:55:50+00:00",
-      "id": "8cc6144a7375"
+      "source": "NDR",
+      "tier": "primary",
+      "title": "Der gestrandete Wal in der Kirchsee vor Poel im Livestream",
+      "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/der-gestrandete-wal-in-der-kirchsee-vor-poel-im-livestream,eventlivestream-336.html",
+      "timestamp": "2026-04-26T06:24:34+00:00",
+      "id": "fa7546ab14b3"
     },
     {
-      "source": "ZDFheute Liveblog",
-      "title": "Rettungsteam will auf Lastkahn setzen",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-23T17:55:50+00:00",
-      "id": "350ab7b1206c"
+      "source": "NDR",
+      "tier": "primary",
+      "title": "Wismar: Stichwahl zwischen Frank Junge und Manuela Medrow",
+      "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/westmecklenburg/wismar-stichwahl-zwischen-frank-junge-und-manuela-medrow,mvregioschwerin-3942.html",
+      "timestamp": "2026-04-26T06:24:34+00:00",
+      "id": "623720c422a7"
     },
     {
-      "source": "ZDFheute Liveblog",
-      "title": "Lage bei Buckelwal vor Poel zunächst unverändert",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-23T17:55:50+00:00",
-      "id": "d6612f34e12e"
+      "source": "NDR",
+      "tier": "primary",
+      "title": "De Woch up Platt in MV: drei Wåhlen, ein Wal un niege Wür'",
+      "url": "https://www.ndr.de/kultur/norddeutsche_sprache/plattdeutsch/de-woch-up-platt-in-mv-drei-wahlen-ein-wal-un-niege-wuer,mvwup-190.html",
+      "timestamp": "2026-04-26T06:24:34+00:00",
+      "id": "911365f9354f"
     },
     {
-      "source": "ZDFheute Liveblog",
-      "title": "\"Er war nicht so aktiv\" - Buckelwal liegt noch in Bucht",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-23T17:55:50+00:00",
-      "id": "26ae5503dfa7"
+      "source": "NDR",
+      "tier": "primary",
+      "title": "Poel: Backhaus duldet neues Konzept für Wal-Transport",
+      "url": "https://www.ndr.de/fernsehen/sendungen/nordmagazin/poel-backhaus-duldet-neues-konzept-fuer-wal-transport,nordmagazin-9800.html",
+      "timestamp": "2026-04-26T06:24:34+00:00",
+      "id": "387cb8981797"
     },
     {
-      "source": "ZDFheute Liveblog",
-      "title": "Wal liegt weiterhin im Wasser vor Poel",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-23T17:55:50+00:00",
-      "id": "381f101d4d60"
+      "source": "IFAW",
+      "tier": "primary",
+      "title": "FAQ: Gestrandeter Buckelwal in der Ostsee März/April 2026",
+      "url": "https://www.ifaw.org/de/aktuelles/buckelwal-ostsee-2026",
+      "timestamp": "2026-04-26T06:20:15+00:00",
+      "id": "09388a8ec371"
     },
     {
-      "source": "ZDFheute Liveblog",
-      "title": "Backhaus: Netz im Wal-Maul nicht aus Mecklenburg-Vorpommern",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-23T17:55:50+00:00",
-      "id": "9ce66d7d6c6e"
+      "source": "t-online",
+      "tier": "quality",
+      "title": "Ständig Menschen direkt am WalRuhig wirkender Wal im Trubel - Was fühlt er wirklich?",
+      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101229252/ruhig-wirkender-wal-im-trubel-was-fuehlt-er-wirklich-.html",
+      "timestamp": "2026-04-26T06:20:10+00:00",
+      "id": "7cdbb761f8ba"
     },
     {
-      "source": "ZDFheute Liveblog",
-      "title": "Keine Details zu neuem Plan für Walrettungsinitiative",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-23T17:55:50+00:00",
-      "id": "51cd7ab34e3b"
+      "source": "t-online",
+      "tier": "quality",
+      "title": "Transportkahn soll Buckelwal in die Nordsee bringen",
+      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101229234/transportkahn-soll-buckelwal-in-die-nordsee-bringen.html",
+      "timestamp": "2026-04-26T06:20:10+00:00",
+      "id": "af7aef5e431f"
     },
     {
-      "source": "ZDFheute Liveblog",
-      "title": "Backhaus: Ursprüngliches Rettungskonzept \"nicht mehr aktuell\"",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-23T17:55:50+00:00",
-      "id": "7c6373c05bd2"
+      "source": "t-online",
+      "tier": "quality",
+      "title": "\"Großer Bruder\": Timmy-Retter nennen neue Details",
+      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101227202/wal-timmy-in-ostsee-live-initiative-nennt-neue-details-zur-rettungsaktion.html",
+      "timestamp": "2026-04-26T06:20:10+00:00",
+      "id": "2850c2674963"
     },
     {
-      "source": "ZDFheute Liveblog",
-      "title": "Minister: \"Wir dulden diesen Rettungsversuch\"",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-23T17:55:50+00:00",
-      "id": "714f9c00f98c"
+      "source": "t-online",
+      "tier": "quality",
+      "title": "Warten auf Transportkahn - oder schwimmt der Wal selbst los?",
+      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101228518/warten-auf-transportkahn-oder-schwimmt-der-wal-selbst-los-.html",
+      "timestamp": "2026-04-26T06:20:10+00:00",
+      "id": "017626d81ac7"
     },
     {
-      "source": "ZDFheute Liveblog",
-      "title": "Umweltminister schreibt Wal weltweite Symbolkraft zu",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-23T17:55:50+00:00",
-      "id": "f82828bb3ab9"
+      "source": "t-online",
+      "tier": "quality",
+      "title": "Expertin entsetzt über Pläne für Wal Timmy",
+      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101225494/wal-vor-poel-er-ist-ein-betrueger-expertin-warnt-vor-neuem-retter.html",
+      "timestamp": "2026-04-26T06:20:10+00:00",
+      "id": "58890bd493aa"
     },
     {
-      "source": "ZDFheute Liveblog",
-      "title": "Backhaus: Wal ist aufmerksam, aber \"kranker Patient\"",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-23T17:55:50+00:00",
-      "id": "2e3aece7cd18"
+      "source": "t-online",
+      "tier": "quality",
+      "title": "Noch offene Fragen zum neuen Rettungskonzept für den Wal",
+      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101226868/noch-offene-fragen-zum-neuen-rettungskonzept-fuer-den-wal.html",
+      "timestamp": "2026-04-26T06:20:10+00:00",
+      "id": "1273abb090d9"
+    },
+    {
+      "source": "t-online",
+      "tier": "quality",
+      "title": "Entscheidung über neuen Plan für Wal-Rettung vertagt",
+      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101226744/entscheidung-ueber-neuen-plan-fuer-wal-rettung-vertagt.html",
+      "timestamp": "2026-04-26T06:20:10+00:00",
+      "id": "c6bdb2bdede0"
+    },
+    {
+      "source": "t-online",
+      "tier": "quality",
+      "title": "Plan mit Lastkahn: Initiatorin will Wal «endlich verbringen»",
+      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101225162/plan-mit-lastkahn-initiatorin-will-wal-endlich-verbringen-.html",
+      "timestamp": "2026-04-26T06:20:10+00:00",
+      "id": "083e9b788dac"
     }
   ]
 }

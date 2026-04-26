@@ -2,16 +2,14 @@
 """
 update_timmy.py
 ---------------
-Scraped verifizierte Primaerquellen zum Fall Timmy und schreibt updates.json.
-Laeuft stuendlich via GitHub Actions. Schreibt nur bei Aenderungen.
+Roulette-basierter Scraper. Pro Lauf wird genau EINE Quelle abgefragt:
+diejenige mit dem hoechsten Score = (jetzt - last_checked) * weight.
 
-Quellen:
-- ZDFheute Liveblog
-- Deutsches Meeresmuseum Fachseite
-- Nordkurier / NDR (falls zugaenglich)
+Dadurch werden einzelne Quellen hoeflich (in grossen Abstaenden) angefragt,
+die Site-Aktualisierung passiert aber im engen Cron-Takt (z.B. alle 10 min).
 
 Zitatrechtliche Leitlinie: Pro Eintrag nur Ueberschrift + Quell-URL.
-Kein Summary/Teaser mehr — vermeidet Konflikt mit Presse-Leistungsschutzrecht (§ 87f UrhG).
+Kein Summary/Teaser — vermeidet Konflikt mit Presse-Leistungsschutzrecht (§ 87f UrhG).
 """
 from __future__ import annotations
 import hashlib
@@ -22,12 +20,16 @@ import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import Callable
 
 import requests
 from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parent.parent
 OUTPUT = ROOT / "updates.json"
+DATA_DIR = ROOT / "data"
+DATA_DIR.mkdir(exist_ok=True)
+STATE_FILE = DATA_DIR / "sources_state.json"
 LOG_DIR = ROOT / "logs"
 LOG_DIR.mkdir(exist_ok=True)
 LOG_FILE = LOG_DIR / "scraper.log"
@@ -39,11 +41,11 @@ logging.basicConfig(
 )
 log = logging.getLogger("timmy")
 
-USER_AGENT = "Mozilla/5.0 (compatible; WalTimmyInfoBot/1.0; +https://wal-timmy.de)"
+USER_AGENT = "Mozilla/5.0 (compatible; WalTimmyInfoBot/1.0; +https://timmy-wal.de)"
 HEADERS = {"User-Agent": USER_AGENT, "Accept-Language": "de-DE,de;q=0.9"}
 TIMEOUT = 20
-
 MAX_ENTRIES = 30
+KEYWORD_RE = re.compile(r"(timmy|hope|wal|buckelwal|ostsee|rettung|kirchsee|poel|wismar|bodden)", re.I)
 
 
 def fetch(url: str) -> str | None:
@@ -64,45 +66,87 @@ def make_id(source: str, title: str, url: str) -> str:
     return hashlib.sha1(f"{source}|{title}|{url}".encode("utf-8")).hexdigest()[:12]
 
 
+def now_iso() -> str:
+    return datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+
+# ---------- Scraper-Funktionen ----------
+
+def _generic_headline_scrape(url: str, source: str, tier: str, selectors: list[str], min_len: int = 15) -> list[dict]:
+    """Suche nach Schlagzeilen via CSS-Selektoren mit Keyword-Filter."""
+    html = fetch(url)
+    if not html:
+        return []
+    soup = BeautifulSoup(html, "html.parser")
+    entries: list[dict] = []
+    seen: set[str] = set()
+    for sel in selectors:
+        for el in soup.select(sel):
+            title = clean(el.get_text())
+            if not title or len(title) < min_len or title in seen:
+                continue
+            if not KEYWORD_RE.search(title):
+                continue
+            seen.add(title)
+            href = el.get("href") if el.name == "a" else None
+            if not href:
+                a = el.find("a", href=True)
+                href = a["href"] if a else None
+            link = href if (href and href.startswith("http")) else (
+                f"{url.rstrip('/')}/{href.lstrip('/')}" if href else url
+            )
+            entries.append({"source": source, "tier": tier, "title": title, "url": link, "timestamp": now_iso()})
+            if len(entries) >= 10:
+                return entries
+    return entries
+
+
 def scrape_zdf_liveblog() -> list[dict]:
-    """ZDFheute Liveblog. Struktur kann sich aendern; defensive Parsing."""
     url = "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html"
     html = fetch(url)
     if not html:
         return []
-
     soup = BeautifulSoup(html, "html.parser")
     entries: list[dict] = []
-
+    seen: set[str] = set()
     candidates = soup.select("article, [data-entry-id], .liveblog-entry, .t-article-card")
-    seen_titles: set[str] = set()
-
     for node in candidates[:MAX_ENTRIES * 2]:
-        headline_el = node.find(["h2", "h3", "h4"])
-        if not headline_el:
+        h = node.find(["h2", "h3", "h4"])
+        if not h:
             continue
-        title = clean(headline_el.get_text())
-        if not title or title in seen_titles:
+        title = clean(h.get_text())
+        if not title or title in seen or not KEYWORD_RE.search(title):
             continue
-        if not re.search(r"(timmy|wal|buckelwal|ostsee|rettung|kirchsee|poel)", title, re.I):
-            continue
-        seen_titles.add(title)
-
+        seen.add(title)
         time_el = node.find("time")
-        ts = None
-        if time_el and time_el.has_attr("datetime"):
-            ts = time_el["datetime"]
-
-        entries.append({
-            "source": "ZDFheute Liveblog",
-            "title": title,
-            "url": url,
-            "timestamp": ts or datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        })
+        ts = time_el["datetime"] if (time_el and time_el.has_attr("datetime")) else now_iso()
+        entries.append({"source": "ZDFheute Liveblog", "tier": "primary", "title": title, "url": url, "timestamp": ts})
         if len(entries) >= MAX_ENTRIES:
             break
-
     log.info("ZDF liveblog: %d entries", len(entries))
+    return entries
+
+
+def _scrape_google_news_rss(query: str, source: str, tier: str, max_items: int = 8) -> list[dict]:
+    """Holt Treffer via Google-News-RSS. Robust gegen JS-Rendering der Zielsite."""
+    url = f"https://news.google.com/rss/search?q={query}&hl=de&gl=DE&ceid=DE:de"
+    html = fetch(url)
+    if not html:
+        return []
+    soup = BeautifulSoup(html, "xml")
+    entries: list[dict] = []
+    for item in soup.find_all("item")[:max_items]:
+        title = clean(item.title.text if item.title else "")
+        link = clean(item.link.text if item.link else "")
+        pubdate = clean(item.pubDate.text if item.pubDate else "")
+        if not title or not link or not KEYWORD_RE.search(title):
+            continue
+        # Google-News-Titel hat Format: "Titel - Quelle"; trenne auf
+        if " - " in title:
+            title = title.rsplit(" - ", 1)[0]
+        ts = pubdate or now_iso()
+        entries.append({"source": source, "tier": tier, "title": title, "url": link, "timestamp": ts})
+    log.info("%s (Google News): %d entries", source, len(entries))
     return entries
 
 
@@ -111,124 +155,230 @@ def scrape_meeresmuseum() -> list[dict]:
     html = fetch(url)
     if not html:
         return []
-
     soup = BeautifulSoup(html, "html.parser")
     entries: list[dict] = []
-
-    main = soup.find("main") or soup
-    headlines = main.find_all(["h2", "h3"], limit=15)
-
-    for h in headlines:
+    # Nur Inhalts-Container, nicht Cookie-Banner / Newsletter / Footer
+    content = soup.select_one("main, article, .content, #content") or soup
+    for h in content.find_all(["h2", "h3"], limit=30):
         title = clean(h.get_text())
-        if not title or not re.search(r"(timmy|wal|buckelwal|ostsee|update)", title, re.I):
+        if not title or len(title) < 15:
             continue
-        entries.append({
-            "source": "Dt. Meeresmuseum",
-            "title": title,
-            "url": url,
-            "timestamp": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        })
+        if not KEYWORD_RE.search(title):
+            continue
+        # Cookie/Datenschutz-Headlines aussortieren
+        if re.search(r"(daten|cookie|newsletter|abschicken|entscheidung)", title, re.I):
+            continue
+        entries.append({"source": "Dt. Meeresmuseum", "tier": "primary", "title": title, "url": url, "timestamp": now_iso()})
         if len(entries) >= 10:
             break
-
     log.info("Meeresmuseum: %d entries", len(entries))
     return entries
 
 
 def scrape_nordkurier() -> list[dict]:
-    """Nordkurier Suchergebnisse fuer Timmy. Opportunistisch."""
-    url = "https://www.nordkurier.de/suche?q=timmy+wal"
+    return _scrape_google_news_rss("Buckelwal+Timmy+site:nordkurier.de", "Nordkurier", "regional")
+
+
+def scrape_ndr() -> list[dict]:
+    """NDR via Mecklenburg-Vorpommern-Index plus URL/Headline-Keyword-Filter."""
+    url = "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/index.html"
     html = fetch(url)
     if not html:
         return []
-
     soup = BeautifulSoup(html, "html.parser")
     entries: list[dict] = []
-
-    for a in soup.select("a[href*='/regional/']")[:20]:
+    seen: set[str] = set()
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
         title = clean(a.get_text())
-        href = a.get("href", "")
-        if not title or len(title) < 20:
+        if not title or len(title) < 20 or title in seen:
             continue
-        if not re.search(r"(timmy|wal|buckelwal)", title, re.I):
+        # Treffer wenn URL ODER Titel das Keyword enthaelt
+        url_match = re.search(r"(timmy|buckelwal|wal-|poel|kirchsee|wismar)", href, re.I)
+        title_match = KEYWORD_RE.search(title)
+        if not (url_match and title_match):
             continue
-        full = href if href.startswith("http") else f"https://www.nordkurier.de{href}"
-        entries.append({
-            "source": "Nordkurier",
-            "title": title,
-            "url": full,
-            "timestamp": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        })
-        if len(entries) >= 5:
+        seen.add(title)
+        full = href if href.startswith("http") else f"https://www.ndr.de{href}"
+        entries.append({"source": "NDR", "tier": "primary", "title": title, "url": full, "timestamp": now_iso()})
+        if len(entries) >= 8:
             break
-
-    log.info("Nordkurier: %d entries", len(entries))
+    log.info("NDR: %d entries", len(entries))
     return entries
 
+
+def scrape_tagesschau() -> list[dict]:
+    url = "https://www.tagesschau.de/api2u/search/?searchText=buckelwal+timmy&resultPage=0"
+    html = fetch(url)
+    if not html:
+        return []
+    try:
+        data = json.loads(html)
+    except Exception:
+        return []
+    entries: list[dict] = []
+    for item in (data.get("searchResults") or [])[:10]:
+        title = clean(item.get("title", ""))
+        link = item.get("shareURL") or item.get("detailsweb") or "https://www.tagesschau.de/"
+        if not title or not KEYWORD_RE.search(title):
+            continue
+        ts = item.get("date") or now_iso()
+        entries.append({"source": "Tagesschau", "tier": "primary", "title": title, "url": link, "timestamp": ts})
+    log.info("Tagesschau: %d entries", len(entries))
+    return entries
+
+
+def scrape_tonline() -> list[dict]:
+    url = "https://www.t-online.de/nachrichten/panorama/tiere/"
+    return _generic_headline_scrape(
+        url, "t-online", "quality",
+        selectors=["a[href*='/id_']", "h3 a", "article a"],
+        min_len=25,
+    )
+
+
+def scrape_bild() -> list[dict]:
+    """BILD via Google News RSS (BILD-Suche selbst ist JS-rendered, daher nicht direkt scrapebar)."""
+    return _scrape_google_news_rss("Buckelwal+Timmy+site:bild.de", "BILD", "boulevard")
+
+
+def scrape_ifaw() -> list[dict]:
+    url = "https://www.ifaw.org/de/aktuelles/buckelwal-ostsee-2026"
+    html = fetch(url)
+    if not html:
+        return []
+    soup = BeautifulSoup(html, "html.parser")
+    entries: list[dict] = []
+    for h in soup.find_all(["h1", "h2", "h3"], limit=20):
+        title = clean(h.get_text())
+        if not title or not KEYWORD_RE.search(title):
+            continue
+        entries.append({"source": "IFAW", "tier": "primary", "title": title, "url": url, "timestamp": now_iso()})
+        if len(entries) >= 5:
+            break
+    log.info("IFAW: %d entries", len(entries))
+    return entries
+
+
+# ---------- Source-Registry ----------
+
+SOURCES: list[dict] = [
+    {"name": "ZDFheute Liveblog", "weight": 2.0, "fn": scrape_zdf_liveblog},
+    {"name": "NDR",               "weight": 2.0, "fn": scrape_ndr},
+    {"name": "t-online",          "weight": 2.0, "fn": scrape_tonline},
+    {"name": "BILD",              "weight": 2.0, "fn": scrape_bild},
+    {"name": "Tagesschau",        "weight": 1.0, "fn": scrape_tagesschau},
+    {"name": "Nordkurier",        "weight": 1.0, "fn": scrape_nordkurier},
+    {"name": "Dt. Meeresmuseum",  "weight": 0.5, "fn": scrape_meeresmuseum},
+    {"name": "IFAW",              "weight": 0.5, "fn": scrape_ifaw},
+]
+
+
+# ---------- State / Roulette ----------
+
+def load_state() -> dict:
+    if not STATE_FILE.exists():
+        return {}
+    try:
+        return json.loads(STATE_FILE.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+
+def save_state(state: dict) -> None:
+    STATE_FILE.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def pick_source(state: dict) -> dict:
+    """Quelle mit hoechstem Score = age_minutes * weight."""
+    now = datetime.now(timezone.utc)
+    best = None
+    best_score = -1.0
+    for src in SOURCES:
+        last = state.get(src["name"], {}).get("last_checked")
+        if last:
+            try:
+                last_dt = datetime.fromisoformat(last.replace("Z", "+00:00"))
+            except Exception:
+                last_dt = now
+            age_min = max(0.0, (now - last_dt).total_seconds() / 60.0)
+        else:
+            age_min = 9999.0
+        score = age_min * src["weight"]
+        if score > best_score:
+            best_score = score
+            best = src
+    return best
+
+
+# ---------- Merge / Output ----------
 
 def load_previous() -> dict:
     if not OUTPUT.exists():
         return {"generated_at": None, "entries": []}
     try:
         return json.loads(OUTPUT.read_text(encoding="utf-8"))
-    except Exception as e:
-        log.warning("Could not read previous updates.json: %s", e)
+    except Exception:
         return {"generated_at": None, "entries": []}
 
 
-def merge_and_dedupe(new_entries: list[dict], prev: dict) -> list[dict]:
-    existing = {e.get("id"): e for e in prev.get("entries", []) if e.get("id")}
+def merge_and_dedupe(new_entries: list[dict], prev: dict, picked_source: str) -> list[dict]:
     merged: list[dict] = []
-
+    new_ids: set[str] = set()
     for entry in new_entries:
-        eid = make_id(entry["source"], entry["title"], entry["url"])
-        entry["id"] = eid
-        if eid in existing:
-            entry["timestamp"] = existing[eid].get("timestamp", entry["timestamp"])
+        entry["id"] = make_id(entry["source"], entry["title"], entry["url"])
+        new_ids.add(entry["id"])
         merged.append(entry)
-
     for old in prev.get("entries", []):
-        if old.get("id") and old["id"] not in {e["id"] for e in merged}:
+        oid = old.get("id")
+        # Bei der heute gepickten Quelle: alte Eintraege dieser Quelle nur uebernehmen, wenn sie auch jetzt wieder
+        # auftauchen (sonst koennten geloeschte/aelter geworden Posts ewig stehen bleiben).
+        # Andere Quellen: alte Eintraege beibehalten.
+        if old.get("source") == picked_source:
+            if oid in new_ids:
+                continue  # neue Version uebernimmt timestamp aus new_entries
+            # alte Eintraege der gepickten Quelle, die NICHT im neuen Scrape sind: behalten,
+            # damit nichts verschwindet wenn Quelle die Seitenstruktur aendert.
             merged.append(old)
-
-    def sort_key(e):
-        return e.get("timestamp") or ""
-    merged.sort(key=sort_key, reverse=True)
+        else:
+            if oid not in new_ids:
+                merged.append(old)
+    merged.sort(key=lambda e: e.get("timestamp") or "", reverse=True)
     return merged[:MAX_ENTRIES]
 
 
 def main() -> int:
     log.info("=== Timmy Update Run ===")
+    state = load_state()
+    src = pick_source(state)
+    log.info("Picked source: %s (weight=%.1f)", src["name"], src["weight"])
 
-    all_entries: list[dict] = []
-    for scraper in (scrape_zdf_liveblog, scrape_meeresmuseum, scrape_nordkurier):
-        try:
-            all_entries.extend(scraper())
-        except Exception as e:
-            log.exception("Scraper %s failed: %s", scraper.__name__, e)
+    try:
+        new_entries = src["fn"]()
+    except Exception as e:
+        log.exception("Scraper %s failed: %s", src["name"], e)
+        new_entries = []
+
+    state[src["name"]] = {"last_checked": now_iso(), "entries_found": len(new_entries)}
+    save_state(state)
 
     prev = load_previous()
-    merged = merge_and_dedupe(all_entries, prev)
+    merged = merge_and_dedupe(new_entries, prev, src["name"])
 
     prev_ids = {e.get("id") for e in prev.get("entries", [])}
-    new_ids = {e["id"] for e in merged}
-
-    if prev_ids == new_ids and prev.get("entries"):
-        log.info("No changes detected — skipping write")
+    new_id_set = {e["id"] for e in merged}
+    if prev_ids == new_id_set and prev.get("entries"):
+        log.info("No changes — skipping write")
         return 0
 
     output = {
-        "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "source_check": [
-            "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-            "https://www.deutsches-meeresmuseum.de/wissenschaft/sichtungen/buckelwal-in-der-ostsee",
-            "https://www.nordkurier.de/suche?q=timmy+wal",
-        ],
+        "generated_at": now_iso(),
+        "last_picked_source": src["name"],
+        "sources": [s["name"] for s in SOURCES],
         "entries": merged,
     }
-
     OUTPUT.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
-    log.info("Wrote %d entries to %s", len(merged), OUTPUT)
+    log.info("Wrote %d entries (picked %s)", len(merged), src["name"])
     return 0
 
 
