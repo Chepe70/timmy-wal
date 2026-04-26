@@ -46,7 +46,12 @@ HEADERS = {"User-Agent": USER_AGENT, "Accept-Language": "de-DE,de;q=0.9"}
 TIMEOUT = 20
 MAX_ENTRIES = 30
 MAX_PER_SOURCE = 3   # bunte Mischung: pro Quelle nur die N neuesten Eintraege im Ticker
-KEYWORD_RE = re.compile(r"(timmy|hope|wal|buckelwal|ostsee|rettung|kirchsee|poel|wismar|bodden)", re.I)
+# Pflicht: ein Wal-Keyword muss vorkommen. Ortsnamen alleine (Wismar, Poel, Ostsee) reichen nicht —
+# sonst landen Stichwahl/Stadtfest/Verkehr-Meldungen im Ticker.
+# Matched: Timmy, Hope, Buckelwal, Wal (Wortgrenze), Wal- (Bindestrich), Walrettung/Walretter, Walfang.
+# NICHT matched: Walter, Wahl, Stichwahl, Wismar, Walnuss, Wall.
+WHALE_RE = re.compile(r"(timmy|hope|buckelwal|\bwal(\b|-|rett|retter|fang|gesang|forsch))", re.I)
+KEYWORD_RE = WHALE_RE  # Backwards-Compat-Alias
 
 
 def fetch(url: str) -> str | None:
@@ -220,9 +225,9 @@ def scrape_ndr() -> list[dict]:
         if not title or len(title) < 20 or title in seen:
             continue
         # Treffer wenn URL ODER Titel das Keyword enthaelt
-        url_match = re.search(r"(timmy|buckelwal|wal-|poel|kirchsee|wismar)", href, re.I)
-        title_match = KEYWORD_RE.search(title)
-        if not (url_match and title_match):
+        # Treffer wenn URL ODER Titel ein Wal-Keyword enthaelt.
+        # Ortsnamen alleine (poel, wismar, kirchsee) sind nicht ausreichend — sonst landen Wismarer Stichwahl-Meldungen im Ticker.
+        if not WHALE_RE.search(title):
             continue
         seen.add(title)
         full = href if href.startswith("http") else f"https://www.ndr.de{href}"
@@ -354,7 +359,9 @@ def merge_and_dedupe(new_entries: list[dict], prev: dict, picked_source: str) ->
         entry["id"] = make_id(entry["source"], entry["title"], entry["url"])
         new_ids.add(entry["id"])
         merged.append(entry)
-    for old in prev.get("entries", []):
+    # Alte Eintraege gegen aktuellen Wal-Filter pruefen — entfernt False-Positives, die unter laxerem Filter reinkamen.
+    prev_entries = [e for e in prev.get("entries", []) if WHALE_RE.search(e.get("title", ""))]
+    for old in prev_entries:
         oid = old.get("id")
         # Bei der heute gepickten Quelle: alte Eintraege dieser Quelle nur uebernehmen, wenn sie auch jetzt wieder
         # auftauchen (sonst koennten geloeschte/aelter geworden Posts ewig stehen bleiben).
@@ -377,7 +384,19 @@ def merge_and_dedupe(new_entries: list[dict], prev: dict, picked_source: str) ->
         by_source.setdefault(e.get("source", ""), []).append(e)
     capped = [e for src_entries in by_source.values() for e in src_entries[:MAX_PER_SOURCE]]
     capped.sort(key=lambda e: e.get("timestamp") or "", reverse=True)
-    return capped[:MAX_ENTRIES]
+    capped = capped[:MAX_ENTRIES]
+    # Reorder: keine zwei aufeinanderfolgenden Eintraege derselben Quelle.
+    # Greedy: pro Schritt den juengsten Eintrag waehlen, dessen Quelle != vorherige.
+    pool = list(capped)
+    out: list[dict] = []
+    last_src = None
+    while pool:
+        # bevorzugt: juengster Eintrag mit anderer Quelle
+        pick_idx = next((i for i, e in enumerate(pool) if e.get("source") != last_src), 0)
+        chosen = pool.pop(pick_idx)
+        out.append(chosen)
+        last_src = chosen.get("source")
+    return out
 
 
 def main() -> int:

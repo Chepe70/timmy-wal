@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-26T06:33:38+00:00",
-  "last_picked_source": "NDR",
+  "generated_at": "2026-04-26T06:37:28+00:00",
+  "last_picked_source": "t-online",
   "sources": [
     "ZDFheute Liveblog",
     "NDR",
@@ -13,12 +13,28 @@
   ],
   "entries": [
     {
+      "source": "t-online",
+      "tier": "quality",
+      "title": "Ständig Menschen direkt am WalRuhig wirkender Wal im Trubel - Was fühlt er wirklich?",
+      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101229252/ruhig-wirkender-wal-im-trubel-was-fuehlt-er-wirklich-.html",
+      "timestamp": "2026-04-26T06:37:28+00:00",
+      "id": "7cdbb761f8ba"
+    },
+    {
       "source": "NDR",
       "tier": "primary",
       "title": "Ostsee-Wal vor Poel: Transport-Schute soll heute eintreffen",
       "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/ostsee-wal-vor-poel-transport-schute-soll-am-sonntag-eintreffen,wal-180.html",
       "timestamp": "2026-04-26T06:33:38+00:00",
       "id": "abf1ca68ccab"
+    },
+    {
+      "source": "t-online",
+      "tier": "quality",
+      "title": "Transportkahn soll Buckelwal in die Nordsee bringen",
+      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101229234/transportkahn-soll-buckelwal-in-die-nordsee-bringen.html",
+      "timestamp": "2026-04-26T06:37:28+00:00",
+      "id": "af7aef5e431f"
     },
     {
       "source": "NDR",
@@ -29,28 +45,12 @@
       "id": "fa7546ab14b3"
     },
     {
-      "source": "NDR",
-      "tier": "primary",
-      "title": "Wismar: Stichwahl zwischen Frank Junge und Manuela Medrow",
-      "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/westmecklenburg/wismar-stichwahl-zwischen-frank-junge-und-manuela-medrow,mvregioschwerin-3942.html",
-      "timestamp": "2026-04-26T06:33:38+00:00",
-      "id": "623720c422a7"
-    },
-    {
-      "source": "ZDFheute Liveblog",
-      "tier": "primary",
-      "title": "Neues Rettungskonzept wird geduldet",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-26T06:29:49+00:00",
-      "id": "c3438b459804"
-    },
-    {
-      "source": "ZDFheute Liveblog",
-      "tier": "primary",
-      "title": "Rettungsrinne soll heute fertig werden",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-26T06:29:49+00:00",
-      "id": "2a83adb8181b"
+      "source": "t-online",
+      "tier": "quality",
+      "title": "\"Großer Bruder\": Timmy-Retter nennen neue Details",
+      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101227202/wal-timmy-in-ostsee-live-initiative-nennt-neue-details-zur-rettungsaktion.html",
+      "timestamp": "2026-04-26T06:37:28+00:00",
+      "id": "2850c2674963"
     },
     {
       "source": "ZDFheute Liveblog",
@@ -67,30 +67,6 @@
       "url": "https://www.ifaw.org/de/aktuelles/buckelwal-ostsee-2026",
       "timestamp": "2026-04-26T06:20:15+00:00",
       "id": "09388a8ec371"
-    },
-    {
-      "source": "t-online",
-      "tier": "quality",
-      "title": "Ständig Menschen direkt am WalRuhig wirkender Wal im Trubel - Was fühlt er wirklich?",
-      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101229252/ruhig-wirkender-wal-im-trubel-was-fuehlt-er-wirklich-.html",
-      "timestamp": "2026-04-26T06:20:10+00:00",
-      "id": "7cdbb761f8ba"
-    },
-    {
-      "source": "t-online",
-      "tier": "quality",
-      "title": "Transportkahn soll Buckelwal in die Nordsee bringen",
-      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101229234/transportkahn-soll-buckelwal-in-die-nordsee-bringen.html",
-      "timestamp": "2026-04-26T06:20:10+00:00",
-      "id": "af7aef5e431f"
-    },
-    {
-      "source": "t-online",
-      "tier": "quality",
-      "title": "\"Großer Bruder\": Timmy-Retter nennen neue Details",
-      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101227202/wal-timmy-in-ostsee-live-initiative-nennt-neue-details-zur-rettungsaktion.html",
-      "timestamp": "2026-04-26T06:20:10+00:00",
-      "id": "2850c2674963"
     },
     {
       "source": "BILD",
