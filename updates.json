@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-26T10:01:56+00:00",
-  "last_picked_source": "t-online",
+  "generated_at": "2026-04-26T10:28:22+00:00",
+  "last_picked_source": "Tagesschau",
   "sources": [
     "ZDFheute Liveblog",
     "NDR",
@@ -31,10 +31,10 @@
     {
       "source": "ZDFheute Liveblog",
       "tier": "primary",
-      "title": "Geldgeber Gunz will weiter Wal-Transport \"bis zum Ende\"",
+      "title": "19 Eilanträge zum Wal beim Verwaltungsgericht",
       "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
       "timestamp": "2026-04-26T09:03:49+00:00",
-      "id": "28df4fa4a35e"
+      "id": "7059bb4187f3"
     },
     {
       "source": "NDR",
@@ -47,10 +47,10 @@
     {
       "source": "ZDFheute Liveblog",
       "tier": "primary",
-      "title": "19 Eilanträge zum Wal beim Verwaltungsgericht",
+      "title": "Geldgeber Gunz will weiter Wal-Transport \"bis zum Ende\"",
       "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
       "timestamp": "2026-04-26T09:03:49+00:00",
-      "id": "7059bb4187f3"
+      "id": "28df4fa4a35e"
     },
     {
       "source": "NDR",
@@ -109,12 +109,28 @@
       "id": "17beaff02651"
     },
     {
+      "source": "Tagesschau",
+      "tier": "primary",
+      "title": "Neuer Rettungsversuch für gestrandeten Buckelwal in der Wismarer Bucht",
+      "url": "https://www.tagesschau.de/",
+      "timestamp": "2026-04-17T11:20:26+00:00",
+      "id": "aed57069b502"
+    },
+    {
       "source": "BILD",
       "tier": "boulevard",
       "title": "Tierärztin erklärt Verfahren: So nehme ich Timmy Blut ab",
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUGRPdFJCckpBNE43TW1VWGZjczlwM241Tk1UWmk2WHozUHVRV09MVFp6YUpFZEMyV0ZDUFFVeWpWalB1OXZmZU9BWVFsTXphdUtCWkVDS0hILXdaSjZlV2lGdndMZHQzVDFibk1abGdlSnE3NHRzUERDZlhCUVhwN1dOcE4wU0x2d1pnU29aRXdteUxJR2FZcUVHdTBYOWI3WDZxMjBRUmw3SFk?oc=5",
       "timestamp": "2026-04-25T15:33:31+00:00",
       "id": "0f06ddab52a4"
+    },
+    {
+      "source": "Tagesschau",
+      "tier": "primary",
+      "title": "Mike-Oliver Woyth, NDR, zum gestrandeten Wal Timmy",
+      "url": "https://www.tagesschau.de/",
+      "timestamp": "2026-04-01T08:22:53+00:00",
+      "id": "66711c7e8ff8"
     }
   ]
 }
