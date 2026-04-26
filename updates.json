@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-26T20:48:30+00:00",
-  "last_picked_source": "ZDFheute Liveblog",
+  "generated_at": "2026-04-26T22:05:53+00:00",
+  "last_picked_source": "BILD",
   "sources": [
     "ZDFheute Liveblog",
     "NDR",
@@ -19,6 +19,22 @@
       "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
       "timestamp": "2026-04-26T20:48:30+00:00",
       "id": "483fd19da717"
+    },
+    {
+      "source": "BILD",
+      "tier": "boulevard",
+      "title": "Mega-Barge auf dem Weg nach Wismar: Dieser Kasten soll Timmy retten",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOQWFTaGhrT0kzbEZnMkYwa0sxRFRRZVpwNElSMkNlM0RSRjJmTEdnZTJicFZjNnJUOGltYTFfUWVEWjNZY0tDOTYxR1AtbU41UXRJS0c3YTQtM2czck1ma1VvQjZrdVlPY2laMVQxWGxQdkJObUhQYktub2xyMnVrcnBkeUJOaVVQQkgzM2lPWXl4NlBvTWdOdGpTZ1ZlYUFRX05tTDhLdVpmdWJXSGI1Y2ZuOU16SzNzeS1tSUNxbWFGU2xwR3c?oc=5",
+      "timestamp": "2026-04-26T19:49:58+00:00",
+      "id": "fb73a0e2d688"
+    },
+    {
+      "source": "ZDFheute Liveblog",
+      "tier": "primary",
+      "title": "Sandsäcke zum Wal gebracht",
+      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
+      "timestamp": "2026-04-26T20:48:30+00:00",
+      "id": "832e58fe70a4"
     },
     {
       "source": "NDR",
@@ -43,14 +59,6 @@
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNYWQ2TlE2MUNWTzExZmRXLXVtU18xS2oxT2x5M1Y2aFh5bjRkMGYxWkJLZ1VVQ0c3eF9EYjZweUZDS015c1doUUFSVHlWb2VkM0ZwaFBjSjZlRV8wWUF5amlwaURRVnJZWWQ0OUpRX2lSVkhLeTY3ZFJDbThKaEwyYVdOWS1wSFpjdC1QMFI4OEdfd04za2dpZkNhYTNidnZnUkNKOEZpLUV0cGZlWjVlTXlzdw?oc=5",
       "timestamp": "2026-04-26T11:57:04+00:00",
       "id": "48e4f8d4a63f"
-    },
-    {
-      "source": "ZDFheute Liveblog",
-      "tier": "primary",
-      "title": "Sandsäcke zum Wal gebracht",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-26T20:48:30+00:00",
-      "id": "832e58fe70a4"
     },
     {
       "source": "t-online",
@@ -107,14 +115,6 @@
       "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101229252/ruhig-wirkender-wal-im-trubel-was-fuehlt-er-wirklich-.html",
       "timestamp": "2026-04-26T02:03:33+00:00",
       "id": "7cdbb761f8ba"
-    },
-    {
-      "source": "BILD",
-      "tier": "boulevard",
-      "title": "Wal Timmy: Till Backhaus zieht Bilanz zu Rettung und kontert Kritik",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSzhUYk5VVHpXRzNzRWVJeUY4RGRjWlcyY1hYV2tiakNpclQ4ZFZtWUJ4TGVuSjdQRTNpbE9QYU1ZU3BidWVsVFNTc3ZqVVBQSTR2cHhYOUtMX2NtcmlyYlZXYnpnbjdYZFNRRWNuUWZSZDNEcWxzY0xrX3VmWmVqM0JoaXJZLWJ1ZldPMW9rUG9QRW4teXdHbzlPN0ROMjhELUtndmNUblN5VXVsOFlHaWdMLWpvb0k?oc=5",
-      "timestamp": "2026-04-25T15:39:55+00:00",
-      "id": "17beaff02651"
     },
     {
       "source": "Nordkurier",
