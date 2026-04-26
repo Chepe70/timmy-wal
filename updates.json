@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-26T08:34:03+00:00",
-  "last_picked_source": "BILD",
+  "generated_at": "2026-04-26T09:03:49+00:00",
+  "last_picked_source": "ZDFheute Liveblog",
   "sources": [
     "ZDFheute Liveblog",
     "NDR",
@@ -13,6 +13,14 @@
   ],
   "entries": [
     {
+      "source": "ZDFheute Liveblog",
+      "tier": "primary",
+      "title": "Der Wal verharrt weiter vor Poel",
+      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
+      "timestamp": "2026-04-26T09:03:49+00:00",
+      "id": "0d3cd88d5bf9"
+    },
+    {
       "source": "NDR",
       "tier": "primary",
       "title": "Ostsee-Wal vor Poel: Transport-Schute soll heute eintreffen",
@@ -23,10 +31,10 @@
     {
       "source": "ZDFheute Liveblog",
       "tier": "primary",
-      "title": "Sandsäcke zum Wal gebracht",
+      "title": "Geldgeber Gunz will weiter Wal-Transport \"bis zum Ende\"",
       "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-26T06:29:49+00:00",
-      "id": "832e58fe70a4"
+      "timestamp": "2026-04-26T09:03:49+00:00",
+      "id": "28df4fa4a35e"
     },
     {
       "source": "NDR",
@@ -35,6 +43,14 @@
       "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/der-gestrandete-wal-in-der-kirchsee-vor-poel-im-livestream,eventlivestream-336.html",
       "timestamp": "2026-04-26T07:12:41+00:00",
       "id": "fa7546ab14b3"
+    },
+    {
+      "source": "ZDFheute Liveblog",
+      "tier": "primary",
+      "title": "19 Eilanträge zum Wal beim Verwaltungsgericht",
+      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
+      "timestamp": "2026-04-26T09:03:49+00:00",
+      "id": "7059bb4187f3"
     },
     {
       "source": "IFAW",
