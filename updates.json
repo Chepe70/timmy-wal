@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-26T18:27:58+00:00",
-  "last_picked_source": "ZDFheute Liveblog",
+  "generated_at": "2026-04-26T20:06:27+00:00",
+  "last_picked_source": "BILD",
   "sources": [
     "ZDFheute Liveblog",
     "NDR",
@@ -31,6 +31,22 @@
     {
       "source": "ZDFheute Liveblog",
       "tier": "primary",
+      "title": "19 Eilanträge zum Wal beim Verwaltungsgericht",
+      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
+      "timestamp": "2026-04-26T18:27:58+00:00",
+      "id": "7059bb4187f3"
+    },
+    {
+      "source": "BILD",
+      "tier": "boulevard",
+      "title": "Toter Wal wird von Haien aufgefressen: Strände gesperrt",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNYWQ2TlE2MUNWTzExZmRXLXVtU18xS2oxT2x5M1Y2aFh5bjRkMGYxWkJLZ1VVQ0c3eF9EYjZweUZDS015c1doUUFSVHlWb2VkM0ZwaFBjSjZlRV8wWUF5amlwaURRVnJZWWQ0OUpRX2lSVkhLeTY3ZFJDbThKaEwyYVdOWS1wSFpjdC1QMFI4OEdfd04za2dpZkNhYTNidnZnUkNKOEZpLUV0cGZlWjVlTXlzdw?oc=5",
+      "timestamp": "2026-04-26T11:57:04+00:00",
+      "id": "48e4f8d4a63f"
+    },
+    {
+      "source": "ZDFheute Liveblog",
+      "tier": "primary",
       "title": "Geldgeber Gunz will weiter Wal-Transport \"bis zum Ende\"",
       "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
       "timestamp": "2026-04-26T18:27:58+00:00",
@@ -43,14 +59,6 @@
       "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101229440/alarm-in-australien-wal-zieht-gefaehrliche-haie-an-straende-gesperrt.html",
       "timestamp": "2026-04-26T08:01:36+00:00",
       "id": "6a736bf9acd3"
-    },
-    {
-      "source": "ZDFheute Liveblog",
-      "tier": "primary",
-      "title": "19 Eilanträge zum Wal beim Verwaltungsgericht",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-26T18:27:58+00:00",
-      "id": "7059bb4187f3"
     },
     {
       "source": "NDR",
@@ -117,22 +125,6 @@
       "id": "ee6239ff48ba"
     },
     {
-      "source": "BILD",
-      "tier": "boulevard",
-      "title": "Tierärztin erklärt Verfahren: So nehme ich Timmy Blut ab",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUGRPdFJCckpBNE43TW1VWGZjczlwM241Tk1UWmk2WHozUHVRV09MVFp6YUpFZEMyV0ZDUFFVeWpWalB1OXZmZU9BWVFsTXphdUtCWkVDS0hILXdaSjZlV2lGdndMZHQzVDFibk1abGdlSnE3NHRzUERDZlhCUVhwN1dOcE4wU0x2d1pnU29aRXdteUxJR2FZcUVHdTBYOWI3WDZxMjBRUmw3SFk?oc=5",
-      "timestamp": "2026-04-25T15:33:31+00:00",
-      "id": "0f06ddab52a4"
-    },
-    {
-      "source": "Nordkurier",
-      "tier": "regional",
-      "title": "Wal „Timmy“ wartet auf Rettung Entscheidung steht weiter aus",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWVo5MGFLR0lLekpUbjNfZFRlZjUwSmdvZ3I0UVlzTXp4Y1ZnSWRfYU1YQlA5SmkwMzVrdTgyRUVqMnNPTmdZVXRjdlVHSko4eWs4dnVXRlJoYzlxVGoyWHl2NWZFQUdJelZOTE9EamNrcTEteWhtdFI4bDlsREIzeGFlR0F2SmlzOHF2M0Q1OGw0cUdnQ2w5Z1RxUTNTZUtXN2tTTVROVGFaT3Z4MWgw?oc=5",
-      "timestamp": "2026-04-23T22:49:00+00:00",
-      "id": "d85087537063"
-    },
-    {
       "source": "Tagesschau",
       "tier": "primary",
       "title": "Neuer Rettungsversuch für gestrandeten Buckelwal in der Wismarer Bucht",
@@ -155,6 +147,14 @@
       "url": "https://www.tagesschau.de/",
       "timestamp": "2026-04-01T08:22:53+00:00",
       "id": "66711c7e8ff8"
+    },
+    {
+      "source": "Nordkurier",
+      "tier": "regional",
+      "title": "Wal „Timmy“ wartet auf Rettung Entscheidung steht weiter aus",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWVo5MGFLR0lLekpUbjNfZFRlZjUwSmdvZ3I0UVlzTXp4Y1ZnSWRfYU1YQlA5SmkwMzVrdTgyRUVqMnNPTmdZVXRjdlVHSko4eWs4dnVXRlJoYzlxVGoyWHl2NWZFQUdJelZOTE9EamNrcTEteWhtdFI4bDlsREIzeGFlR0F2SmlzOHF2M0Q1OGw0cUdnQ2w5Z1RxUTNTZUtXN2tTTVROVGFaT3Z4MWgw?oc=5",
+      "timestamp": "2026-04-23T22:49:00+00:00",
+      "id": "d85087537063"
     }
   ]
 }
