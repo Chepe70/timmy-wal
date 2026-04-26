@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-26T06:29:49+00:00",
-  "last_picked_source": "ZDFheute Liveblog",
+  "generated_at": "2026-04-26T06:33:38+00:00",
+  "last_picked_source": "NDR",
   "sources": [
     "ZDFheute Liveblog",
     "NDR",
@@ -12,6 +12,30 @@
     "IFAW"
   ],
   "entries": [
+    {
+      "source": "NDR",
+      "tier": "primary",
+      "title": "Ostsee-Wal vor Poel: Transport-Schute soll heute eintreffen",
+      "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/ostsee-wal-vor-poel-transport-schute-soll-am-sonntag-eintreffen,wal-180.html",
+      "timestamp": "2026-04-26T06:33:38+00:00",
+      "id": "abf1ca68ccab"
+    },
+    {
+      "source": "NDR",
+      "tier": "primary",
+      "title": "Der gestrandete Wal in der Kirchsee vor Poel im Livestream",
+      "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/der-gestrandete-wal-in-der-kirchsee-vor-poel-im-livestream,eventlivestream-336.html",
+      "timestamp": "2026-04-26T06:33:38+00:00",
+      "id": "fa7546ab14b3"
+    },
+    {
+      "source": "NDR",
+      "tier": "primary",
+      "title": "Wismar: Stichwahl zwischen Frank Junge und Manuela Medrow",
+      "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/westmecklenburg/wismar-stichwahl-zwischen-frank-junge-und-manuela-medrow,mvregioschwerin-3942.html",
+      "timestamp": "2026-04-26T06:33:38+00:00",
+      "id": "623720c422a7"
+    },
     {
       "source": "ZDFheute Liveblog",
       "tier": "primary",
@@ -35,142 +59,6 @@
       "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
       "timestamp": "2026-04-26T06:29:49+00:00",
       "id": "832e58fe70a4"
-    },
-    {
-      "source": "ZDFheute Liveblog",
-      "tier": "primary",
-      "title": "\"Deutschlands Lieblingswal\": Wie im Ausland berichtet wird",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-26T06:29:49+00:00",
-      "id": "1493684d8b64"
-    },
-    {
-      "source": "ZDFheute Liveblog",
-      "tier": "primary",
-      "title": "Der Wal verharrt weiter vor Poel",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-26T06:29:49+00:00",
-      "id": "0d3cd88d5bf9"
-    },
-    {
-      "source": "ZDFheute Liveblog",
-      "tier": "primary",
-      "title": "Möglicherweise neuer Rettungsversuch am Wochenende",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-26T06:29:49+00:00",
-      "id": "7012cacd046c"
-    },
-    {
-      "source": "ZDFheute Liveblog",
-      "tier": "primary",
-      "title": "Backhaus: Zeitfenster für Rettung beginnt, sich zu schließen",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-26T06:29:49+00:00",
-      "id": "919f1d53aef3"
-    },
-    {
-      "source": "ZDFheute Liveblog",
-      "tier": "primary",
-      "title": "19 Eilanträge zum Wal beim Verwaltungsgericht",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-26T06:29:49+00:00",
-      "id": "7059bb4187f3"
-    },
-    {
-      "source": "ZDFheute Liveblog",
-      "tier": "primary",
-      "title": "Umweltministerium prüft neuen Rettungsplan",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-26T06:29:49+00:00",
-      "id": "2800c68ec7fa"
-    },
-    {
-      "source": "ZDFheute Liveblog",
-      "tier": "primary",
-      "title": "Geldgeber Gunz will weiter Wal-Transport \"bis zum Ende\"",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-26T06:29:49+00:00",
-      "id": "28df4fa4a35e"
-    },
-    {
-      "source": "ZDFheute Liveblog",
-      "tier": "primary",
-      "title": "Geschwächter Buckelwal: Rettung weiter offen",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-26T06:29:49+00:00",
-      "id": "9bbb01fa3a34"
-    },
-    {
-      "source": "ZDFheute Liveblog",
-      "tier": "primary",
-      "title": "Planungen für die Wal-Rettung laufen weiter",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-26T06:29:49+00:00",
-      "id": "1adef39b70c0"
-    },
-    {
-      "source": "ZDFheute Liveblog",
-      "tier": "primary",
-      "title": "Wal liegt weiter im flachen Wasser",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-26T06:29:49+00:00",
-      "id": "a4f53a30daa9"
-    },
-    {
-      "source": "ZDFheute Liveblog",
-      "tier": "primary",
-      "title": "Ministerium wartet auf neues Wal-Rettungskonzept",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-26T06:29:49+00:00",
-      "id": "e4a04ae15036"
-    },
-    {
-      "source": "ZDFheute Liveblog",
-      "tier": "primary",
-      "title": "Mindestens fünf Helfer beim Wal",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-26T06:29:49+00:00",
-      "id": "29059d634216"
-    },
-    {
-      "source": "NDR",
-      "tier": "primary",
-      "title": "Ostsee-Wal vor Poel: Transport-Schute soll heute eintreffen",
-      "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/ostsee-wal-vor-poel-transport-schute-soll-am-sonntag-eintreffen,wal-180.html",
-      "timestamp": "2026-04-26T06:24:34+00:00",
-      "id": "abf1ca68ccab"
-    },
-    {
-      "source": "NDR",
-      "tier": "primary",
-      "title": "Der gestrandete Wal in der Kirchsee vor Poel im Livestream",
-      "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/der-gestrandete-wal-in-der-kirchsee-vor-poel-im-livestream,eventlivestream-336.html",
-      "timestamp": "2026-04-26T06:24:34+00:00",
-      "id": "fa7546ab14b3"
-    },
-    {
-      "source": "NDR",
-      "tier": "primary",
-      "title": "Wismar: Stichwahl zwischen Frank Junge und Manuela Medrow",
-      "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/westmecklenburg/wismar-stichwahl-zwischen-frank-junge-und-manuela-medrow,mvregioschwerin-3942.html",
-      "timestamp": "2026-04-26T06:24:34+00:00",
-      "id": "623720c422a7"
-    },
-    {
-      "source": "NDR",
-      "tier": "primary",
-      "title": "De Woch up Platt in MV: drei Wåhlen, ein Wal un niege Wür'",
-      "url": "https://www.ndr.de/kultur/norddeutsche_sprache/plattdeutsch/de-woch-up-platt-in-mv-drei-wahlen-ein-wal-un-niege-wuer,mvwup-190.html",
-      "timestamp": "2026-04-26T06:24:34+00:00",
-      "id": "911365f9354f"
-    },
-    {
-      "source": "NDR",
-      "tier": "primary",
-      "title": "Poel: Backhaus duldet neues Konzept für Wal-Transport",
-      "url": "https://www.ndr.de/fernsehen/sendungen/nordmagazin/poel-backhaus-duldet-neues-konzept-fuer-wal-transport,nordmagazin-9800.html",
-      "timestamp": "2026-04-26T06:24:34+00:00",
-      "id": "387cb8981797"
     },
     {
       "source": "IFAW",
@@ -203,46 +91,6 @@
       "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101227202/wal-timmy-in-ostsee-live-initiative-nennt-neue-details-zur-rettungsaktion.html",
       "timestamp": "2026-04-26T06:20:10+00:00",
       "id": "2850c2674963"
-    },
-    {
-      "source": "t-online",
-      "tier": "quality",
-      "title": "Warten auf Transportkahn - oder schwimmt der Wal selbst los?",
-      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101228518/warten-auf-transportkahn-oder-schwimmt-der-wal-selbst-los-.html",
-      "timestamp": "2026-04-26T06:20:10+00:00",
-      "id": "017626d81ac7"
-    },
-    {
-      "source": "t-online",
-      "tier": "quality",
-      "title": "Expertin entsetzt über Pläne für Wal Timmy",
-      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101225494/wal-vor-poel-er-ist-ein-betrueger-expertin-warnt-vor-neuem-retter.html",
-      "timestamp": "2026-04-26T06:20:10+00:00",
-      "id": "58890bd493aa"
-    },
-    {
-      "source": "t-online",
-      "tier": "quality",
-      "title": "Noch offene Fragen zum neuen Rettungskonzept für den Wal",
-      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101226868/noch-offene-fragen-zum-neuen-rettungskonzept-fuer-den-wal.html",
-      "timestamp": "2026-04-26T06:20:10+00:00",
-      "id": "1273abb090d9"
-    },
-    {
-      "source": "t-online",
-      "tier": "quality",
-      "title": "Entscheidung über neuen Plan für Wal-Rettung vertagt",
-      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101226744/entscheidung-ueber-neuen-plan-fuer-wal-rettung-vertagt.html",
-      "timestamp": "2026-04-26T06:20:10+00:00",
-      "id": "c6bdb2bdede0"
-    },
-    {
-      "source": "t-online",
-      "tier": "quality",
-      "title": "Plan mit Lastkahn: Initiatorin will Wal «endlich verbringen»",
-      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101225162/plan-mit-lastkahn-initiatorin-will-wal-endlich-verbringen-.html",
-      "timestamp": "2026-04-26T06:20:10+00:00",
-      "id": "083e9b788dac"
     },
     {
       "source": "BILD",

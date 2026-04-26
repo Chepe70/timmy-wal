@@ -45,6 +45,7 @@ USER_AGENT = "Mozilla/5.0 (compatible; WalTimmyInfoBot/1.0; +https://timmy-wal.d
 HEADERS = {"User-Agent": USER_AGENT, "Accept-Language": "de-DE,de;q=0.9"}
 TIMEOUT = 20
 MAX_ENTRIES = 30
+MAX_PER_SOURCE = 3   # bunte Mischung: pro Quelle nur die N neuesten Eintraege im Ticker
 KEYWORD_RE = re.compile(r"(timmy|hope|wal|buckelwal|ostsee|rettung|kirchsee|poel|wismar|bodden)", re.I)
 
 
@@ -370,8 +371,13 @@ def merge_and_dedupe(new_entries: list[dict], prev: dict, picked_source: str) ->
     # Alle Timestamps in ISO-UTC normalisieren (Altdaten konnten RFC 822 enthalten)
     for e in merged:
         e["timestamp"] = to_iso(e.get("timestamp"))
-    merged.sort(key=lambda e: e.get("timestamp") or "", reverse=True)
-    return merged[:MAX_ENTRIES]
+    # Pro Quelle nur die N neuesten — bunte Mischung statt Quellen-Dominanz
+    by_source: dict[str, list[dict]] = {}
+    for e in sorted(merged, key=lambda x: x.get("timestamp") or "", reverse=True):
+        by_source.setdefault(e.get("source", ""), []).append(e)
+    capped = [e for src_entries in by_source.values() for e in src_entries[:MAX_PER_SOURCE]]
+    capped.sort(key=lambda e: e.get("timestamp") or "", reverse=True)
+    return capped[:MAX_ENTRIES]
 
 
 def main() -> int:
