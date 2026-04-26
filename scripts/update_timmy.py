@@ -385,17 +385,23 @@ def merge_and_dedupe(new_entries: list[dict], prev: dict, picked_source: str) ->
     capped = [e for src_entries in by_source.values() for e in src_entries[:MAX_PER_SOURCE]]
     capped.sort(key=lambda e: e.get("timestamp") or "", reverse=True)
     capped = capped[:MAX_ENTRIES]
-    # Reorder: keine zwei aufeinanderfolgenden Eintraege derselben Quelle.
-    # Greedy: pro Schritt den juengsten Eintrag waehlen, dessen Quelle != vorherige.
-    pool = list(capped)
-    out: list[dict] = []
-    last_src = None
-    while pool:
-        # bevorzugt: juengster Eintrag mit anderer Quelle
-        pick_idx = next((i for i, e in enumerate(pool) if e.get("source") != last_src), 0)
-        chosen = pool.pop(pick_idx)
-        out.append(chosen)
-        last_src = chosen.get("source")
+    # Strikt zeitlich absteigend (Variante 2). Anschliessend MINIMALER Swap, um zwei aufeinanderfolgende
+    # Eintraege derselben Quelle aufzubrechen — DESC bleibt bevorzugt, Reorder nur wo Konflikt entsteht.
+    out = list(capped)
+    i = 1
+    while i < len(out):
+        if out[i].get("source") == out[i - 1].get("source"):
+            for j in range(i + 1, len(out)):
+                if out[j].get("source") != out[i - 1].get("source") and out[j].get("source") != out[i].get("source"):
+                    out[i], out[j] = out[j], out[i]
+                    break
+            else:
+                # Fallback: Quelle != vorherige reicht (Cluster aufbrechen, auch wenn naechster gleicher Quelle ist)
+                for j in range(i + 1, len(out)):
+                    if out[j].get("source") != out[i - 1].get("source"):
+                        out[i], out[j] = out[j], out[i]
+                        break
+        i += 1
     return out
 
 

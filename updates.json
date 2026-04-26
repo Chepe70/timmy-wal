@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-26T06:37:28+00:00",
-  "last_picked_source": "t-online",
+  "generated_at": "2026-04-26T06:45:51+00:00",
+  "last_picked_source": "BILD",
   "sources": [
     "ZDFheute Liveblog",
     "NDR",
@@ -31,10 +31,10 @@
     {
       "source": "t-online",
       "tier": "quality",
-      "title": "Transportkahn soll Buckelwal in die Nordsee bringen",
-      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101229234/transportkahn-soll-buckelwal-in-die-nordsee-bringen.html",
+      "title": "\"Großer Bruder\": Timmy-Retter nennen neue Details",
+      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101227202/wal-timmy-in-ostsee-live-initiative-nennt-neue-details-zur-rettungsaktion.html",
       "timestamp": "2026-04-26T06:37:28+00:00",
-      "id": "af7aef5e431f"
+      "id": "2850c2674963"
     },
     {
       "source": "NDR",
@@ -47,10 +47,10 @@
     {
       "source": "t-online",
       "tier": "quality",
-      "title": "\"Großer Bruder\": Timmy-Retter nennen neue Details",
-      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101227202/wal-timmy-in-ostsee-live-initiative-nennt-neue-details-zur-rettungsaktion.html",
+      "title": "Transportkahn soll Buckelwal in die Nordsee bringen",
+      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101229234/transportkahn-soll-buckelwal-in-die-nordsee-bringen.html",
       "timestamp": "2026-04-26T06:37:28+00:00",
-      "id": "2850c2674963"
+      "id": "af7aef5e431f"
     },
     {
       "source": "ZDFheute Liveblog",
@@ -59,6 +59,14 @@
       "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
       "timestamp": "2026-04-26T06:29:49+00:00",
       "id": "832e58fe70a4"
+    },
+    {
+      "source": "BILD",
+      "tier": "boulevard",
+      "title": "Tag 27 in der Bucht von Poel: Der Rettungsversuch für Timmy im Livestream",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPT0k5NXpkWUNtWkp2cHZwS1djbjl6YzFzMV9MM2V2dHFsV0JYU3pZc3VaRS1aLVlQek1URE5WSm5LcDh1dUVTdjJGWHg2NGRPYkxCdjZpZjQyR2V3OFA2c0w4VjFGR3ZUel9NTW55eEFGUHhLZ21sQ1dnZF9jYXNmaEkxTDRsdHhKcGt4ekJ5U1VUek4yX2lFT1ROQXRXZ0d3azRKUVNITUZsS1lvMlhtSmxxamhuU1lQX014WUhWSEo?oc=5",
+      "timestamp": "2026-04-26T06:29:00+00:00",
+      "id": "b3f2a3c1df28"
     },
     {
       "source": "IFAW",
@@ -75,6 +83,14 @@
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQdUI5SVdiaFdXX3ZfelBqbzFQY19pRkRXV0c1Mms2MHVVbHl6bWgzNThHZ2lJLVJHaWJUeWdnTVF0R3NRY0FXcng0SjZXaTZVeFhtam1STmRJNWhaSnRCMjMxb0tSR19uNk1VNlBUX012VnViTmtidHR4eEI0VGNlNU1TdTZmUEJkNExxZXRpdzZ2WktVZVR4eVdIVlhHajhtUVVtMXk5bXVZMTg5bE1ENXk3YmxPUXlEMF9MYg?oc=5",
       "timestamp": "2026-04-25T18:45:26+00:00",
       "id": "547c614bb965"
+    },
+    {
+      "source": "BILD",
+      "tier": "boulevard",
+      "title": "Wal Timmy: Till Backhaus zieht Bilanz zu Rettung und kontert Kritik",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSzhUYk5VVHpXRzNzRWVJeUY4RGRjWlcyY1hYV2tiakNpclQ4ZFZtWUJ4TGVuSjdQRTNpbE9QYU1ZU3BidWVsVFNTc3ZqVVBQSTR2cHhYOUtMX2NtcmlyYlZXYnpnbjdYZFNRRWNuUWZSZDNEcWxzY0xrX3VmWmVqM0JoaXJZLWJ1ZldPMW9rUG9QRW4teXdHbzlPN0ROMjhELUtndmNUblN5VXVsOFlHaWdMLWpvb0k?oc=5",
+      "timestamp": "2026-04-25T15:39:55+00:00",
+      "id": "17beaff02651"
     }
   ]
 }
