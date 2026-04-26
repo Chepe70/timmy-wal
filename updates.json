@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-26T11:47:37+00:00",
-  "last_picked_source": "ZDFheute Liveblog",
+  "generated_at": "2026-04-26T12:06:25+00:00",
+  "last_picked_source": "NDR",
   "sources": [
     "ZDFheute Liveblog",
     "NDR",
@@ -31,6 +31,22 @@
     {
       "source": "ZDFheute Liveblog",
       "tier": "primary",
+      "title": "Sandsäcke zum Wal gebracht",
+      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
+      "timestamp": "2026-04-26T11:47:37+00:00",
+      "id": "832e58fe70a4"
+    },
+    {
+      "source": "NDR",
+      "tier": "primary",
+      "title": "Ostsee-Wal vor Poel: Transport-Schute auf dem Weg",
+      "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/ostsee-wal-vor-poel-transport-schute-soll-am-sonntag-eintreffen,wal-180.html",
+      "timestamp": "2026-04-26T07:16:58+00:00",
+      "id": "2be2acfa0bd7"
+    },
+    {
+      "source": "ZDFheute Liveblog",
+      "tier": "primary",
       "title": "Geschwächter Buckelwal: Rettung weiter offen",
       "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
       "timestamp": "2026-04-26T11:47:37+00:00",
@@ -45,22 +61,6 @@
       "id": "94dc166d4f8f"
     },
     {
-      "source": "ZDFheute Liveblog",
-      "tier": "primary",
-      "title": "Sandsäcke zum Wal gebracht",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-26T11:47:37+00:00",
-      "id": "832e58fe70a4"
-    },
-    {
-      "source": "NDR",
-      "tier": "primary",
-      "title": "Ostsee-Wal vor Poel: Transport-Schute soll heute eintreffen",
-      "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/ostsee-wal-vor-poel-transport-schute-soll-am-sonntag-eintreffen,wal-180.html",
-      "timestamp": "2026-04-26T07:16:58+00:00",
-      "id": "abf1ca68ccab"
-    },
-    {
       "source": "IFAW",
       "tier": "primary",
       "title": "FAQ: Gestrandeter Buckelwal in der Ostsee März/April 2026",
@@ -71,10 +71,10 @@
     {
       "source": "NDR",
       "tier": "primary",
-      "title": "Der gestrandete Wal in der Kirchsee vor Poel im Livestream",
-      "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/der-gestrandete-wal-in-der-kirchsee-vor-poel-im-livestream,eventlivestream-336.html",
-      "timestamp": "2026-04-26T07:12:41+00:00",
-      "id": "fa7546ab14b3"
+      "title": "Ostsee-Wal vor Poel: Transport-Schute soll heute eintreffen",
+      "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/ostsee-wal-vor-poel-transport-schute-soll-am-sonntag-eintreffen,wal-180.html",
+      "timestamp": "2026-04-26T07:16:58+00:00",
+      "id": "abf1ca68ccab"
     },
     {
       "source": "t-online",
