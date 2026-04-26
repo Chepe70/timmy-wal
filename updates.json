@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-26T11:20:48+00:00",
-  "last_picked_source": "Nordkurier",
+  "generated_at": "2026-04-26T11:47:37+00:00",
+  "last_picked_source": "ZDFheute Liveblog",
   "sources": [
     "ZDFheute Liveblog",
     "NDR",
@@ -15,10 +15,10 @@
     {
       "source": "ZDFheute Liveblog",
       "tier": "primary",
-      "title": "Der Wal verharrt weiter vor Poel",
+      "title": "Lastkahn ist unterwegs - Wal-Transport am Dienstag?",
       "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-26T09:03:49+00:00",
-      "id": "0d3cd88d5bf9"
+      "timestamp": "2026-04-26T11:47:37+00:00",
+      "id": "483fd19da717"
     },
     {
       "source": "t-online",
@@ -31,10 +31,10 @@
     {
       "source": "ZDFheute Liveblog",
       "tier": "primary",
-      "title": "Geldgeber Gunz will weiter Wal-Transport \"bis zum Ende\"",
+      "title": "Geschwächter Buckelwal: Rettung weiter offen",
       "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-26T09:03:49+00:00",
-      "id": "28df4fa4a35e"
+      "timestamp": "2026-04-26T11:47:37+00:00",
+      "id": "9bbb01fa3a34"
     },
     {
       "source": "NDR",
@@ -47,10 +47,10 @@
     {
       "source": "ZDFheute Liveblog",
       "tier": "primary",
-      "title": "19 Eilanträge zum Wal beim Verwaltungsgericht",
+      "title": "Sandsäcke zum Wal gebracht",
       "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-26T09:03:49+00:00",
-      "id": "7059bb4187f3"
+      "timestamp": "2026-04-26T11:47:37+00:00",
+      "id": "832e58fe70a4"
     },
     {
       "source": "NDR",
