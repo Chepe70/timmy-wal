@@ -37,14 +37,6 @@
       "id": "832e58fe70a4"
     },
     {
-      "source": "BILD",
-      "tier": "boulevard",
-      "title": "Tag 27 in der Bucht von Poel: Der Rettungsversuch für Timmy im Livestream",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPT0k5NXpkWUNtWkp2cHZwS1djbjl6YzFzMV9MM2V2dHFsV0JYU3pZc3VaRS1aLVlQek1URE5WSm5LcDh1dUVTdjJGWHg2NGRPYkxCdjZpZjQyR2V3OFA2c0w4VjFGR3ZUel9NTW55eEFGUHhLZ21sQ1dnZF9jYXNmaEkxTDRsdHhKcGt4ekJ5U1VUek4yX2lFT1ROQXRXZ0d3azRKUVNITUZsS1lvMlhtSmxxamhuU1lQX014WUhWSEo?oc=5",
-      "timestamp": "2026-04-26T06:29:00+00:00",
-      "id": "b3f2a3c1df28"
-    },
-    {
       "source": "IFAW",
       "tier": "primary",
       "title": "FAQ: Gestrandeter Buckelwal in der Ostsee März/April 2026",
@@ -100,5 +92,6 @@
       "timestamp": "2026-04-24T07:02:15+00:00",
       "id": "2850c2674963"
     }
-  ]
+  ],
+  "items": []
 }

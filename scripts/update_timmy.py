@@ -322,9 +322,21 @@ def scrape_tonline() -> list[dict]:
     )
 
 
+_BILD_LIVESTREAM_RE = re.compile(r"(livestream|liveticker|liveblog|tag\s*\d+\s*in\s*der\s*bucht)", re.I)
+
+
 def scrape_bild() -> list[dict]:
-    """BILD via Google News RSS (BILD-Suche selbst ist JS-rendered, daher nicht direkt scrapebar)."""
-    return _scrape_google_news_rss("Buckelwal+Timmy+site:bild.de", "BILD", "boulevard")
+    """BILD via Google News RSS (BILD-Suche selbst ist JS-rendered, daher nicht direkt scrapebar).
+
+    Filter: Livestream-/Liveticker-Beitraege werden ausgeschlossen, weil deren URL auf eine
+    sich permanent aendernde Seite zeigt — der Schlagzeilen-Kontext stimmt dann nicht mehr.
+    """
+    entries = _scrape_google_news_rss("Buckelwal+Timmy+site:bild.de", "BILD", "boulevard")
+    filtered = [e for e in entries if not _BILD_LIVESTREAM_RE.search(e["title"])]
+    dropped = len(entries) - len(filtered)
+    if dropped:
+        log.info("BILD: %d Livestream-/Liveticker-Eintraege gefiltert", dropped)
+    return filtered
 
 
 def scrape_ifaw() -> list[dict]:
