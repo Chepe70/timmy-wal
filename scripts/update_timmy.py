@@ -70,6 +70,32 @@ def now_iso() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
 
 
+def to_iso(ts: str | None) -> str:
+    """Parst beliebige Timestamp-Formate (RFC 822, ISO 8601) in ISO-UTC.
+    Faellt auf jetzt zurueck, wenn Parsing fehlschlaegt."""
+    if not ts:
+        return now_iso()
+    ts = ts.strip()
+    # ISO 8601 (incl. trailing Z)
+    try:
+        dt = datetime.fromisoformat(ts.replace("Z", "+00:00"))
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt.astimezone(timezone.utc).isoformat(timespec="seconds")
+    except Exception:
+        pass
+    # RFC 822 / RSS pubDate (e.g. "Sat, 26 Apr 2026 08:24:00 GMT")
+    try:
+        from email.utils import parsedate_to_datetime
+        dt = parsedate_to_datetime(ts)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt.astimezone(timezone.utc).isoformat(timespec="seconds")
+    except Exception:
+        pass
+    return now_iso()
+
+
 # ---------- Scraper-Funktionen ----------
 
 def _generic_headline_scrape(url: str, source: str, tier: str, selectors: list[str], min_len: int = 15) -> list[dict]:
@@ -119,7 +145,7 @@ def scrape_zdf_liveblog() -> list[dict]:
             continue
         seen.add(title)
         time_el = node.find("time")
-        ts = time_el["datetime"] if (time_el and time_el.has_attr("datetime")) else now_iso()
+        ts = to_iso(time_el["datetime"]) if (time_el and time_el.has_attr("datetime")) else now_iso()
         entries.append({"source": "ZDFheute Liveblog", "tier": "primary", "title": title, "url": url, "timestamp": ts})
         if len(entries) >= MAX_ENTRIES:
             break
@@ -144,8 +170,7 @@ def _scrape_google_news_rss(query: str, source: str, tier: str, max_items: int =
         # Google-News-Titel hat Format: "Titel - Quelle"; trenne auf
         if " - " in title:
             title = title.rsplit(" - ", 1)[0]
-        ts = pubdate or now_iso()
-        entries.append({"source": source, "tier": tier, "title": title, "url": link, "timestamp": ts})
+        entries.append({"source": source, "tier": tier, "title": title, "url": link, "timestamp": to_iso(pubdate)})
     log.info("%s (Google News): %d entries", source, len(entries))
     return entries
 
@@ -222,8 +247,7 @@ def scrape_tagesschau() -> list[dict]:
         link = item.get("shareURL") or item.get("detailsweb") or "https://www.tagesschau.de/"
         if not title or not KEYWORD_RE.search(title):
             continue
-        ts = item.get("date") or now_iso()
-        entries.append({"source": "Tagesschau", "tier": "primary", "title": title, "url": link, "timestamp": ts})
+        entries.append({"source": "Tagesschau", "tier": "primary", "title": title, "url": link, "timestamp": to_iso(item.get("date"))})
     log.info("Tagesschau: %d entries", len(entries))
     return entries
 
@@ -343,6 +367,9 @@ def merge_and_dedupe(new_entries: list[dict], prev: dict, picked_source: str) ->
         else:
             if oid not in new_ids:
                 merged.append(old)
+    # Alle Timestamps in ISO-UTC normalisieren (Altdaten konnten RFC 822 enthalten)
+    for e in merged:
+        e["timestamp"] = to_iso(e.get("timestamp"))
     merged.sort(key=lambda e: e.get("timestamp") or "", reverse=True)
     return merged[:MAX_ENTRIES]
 
