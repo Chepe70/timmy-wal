@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-26T13:36:09+00:00",
-  "last_picked_source": "ZDFheute Liveblog",
+  "generated_at": "2026-04-26T14:05:32+00:00",
+  "last_picked_source": "NDR",
   "sources": [
     "ZDFheute Liveblog",
     "NDR",
@@ -12,6 +12,14 @@
     "IFAW"
   ],
   "entries": [
+    {
+      "source": "NDR",
+      "tier": "primary",
+      "title": "Ostsee-Wal vor Poel: Transport-Schute auf dem Weg",
+      "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/ostsee-wal-vor-poel-transport-schute-auf-dem-weg,wal-180.html",
+      "timestamp": "2026-04-26T15:18:50+00:00",
+      "id": "6a09e07166b9"
+    },
     {
       "source": "ZDFheute Liveblog",
       "tier": "primary",
@@ -31,10 +39,10 @@
     {
       "source": "ZDFheute Liveblog",
       "tier": "primary",
-      "title": "Geldgeber Gunz will weiter Wal-Transport \"bis zum Ende\"",
+      "title": "19 Eilanträge zum Wal beim Verwaltungsgericht",
       "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
       "timestamp": "2026-04-26T13:36:09+00:00",
-      "id": "28df4fa4a35e"
+      "id": "7059bb4187f3"
     },
     {
       "source": "NDR",
@@ -47,10 +55,10 @@
     {
       "source": "ZDFheute Liveblog",
       "tier": "primary",
-      "title": "19 Eilanträge zum Wal beim Verwaltungsgericht",
+      "title": "Geldgeber Gunz will weiter Wal-Transport \"bis zum Ende\"",
       "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
       "timestamp": "2026-04-26T13:36:09+00:00",
-      "id": "7059bb4187f3"
+      "id": "28df4fa4a35e"
     },
     {
       "source": "NDR",
@@ -67,14 +75,6 @@
       "url": "https://www.ifaw.org/de/aktuelles/buckelwal-ostsee-2026",
       "timestamp": "2026-04-26T06:20:15+00:00",
       "id": "09388a8ec371"
-    },
-    {
-      "source": "NDR",
-      "tier": "primary",
-      "title": "Ostsee-Wal vor Poel: Transport-Schute soll heute eintreffen",
-      "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/ostsee-wal-vor-poel-transport-schute-soll-am-sonntag-eintreffen,wal-180.html",
-      "timestamp": "2026-04-26T07:16:58+00:00",
-      "id": "abf1ca68ccab"
     },
     {
       "source": "t-online",
