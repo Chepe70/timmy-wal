@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-26T09:03:49+00:00",
-  "last_picked_source": "ZDFheute Liveblog",
+  "generated_at": "2026-04-26T09:32:57+00:00",
+  "last_picked_source": "NDR",
   "sources": [
     "ZDFheute Liveblog",
     "NDR",
@@ -19,6 +19,22 @@
       "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
       "timestamp": "2026-04-26T09:03:49+00:00",
       "id": "0d3cd88d5bf9"
+    },
+    {
+      "source": "NDR",
+      "tier": "primary",
+      "title": "Ostsee-Wal vor Poel: Transport-Schute auf dem Weg nach Poel",
+      "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/ostsee-wal-vor-poel-transport-schute-soll-am-sonntag-eintreffen,wal-180.html",
+      "timestamp": "2026-04-26T07:16:58+00:00",
+      "id": "94dc166d4f8f"
+    },
+    {
+      "source": "ZDFheute Liveblog",
+      "tier": "primary",
+      "title": "19 Eilanträge zum Wal beim Verwaltungsgericht",
+      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
+      "timestamp": "2026-04-26T09:03:49+00:00",
+      "id": "7059bb4187f3"
     },
     {
       "source": "NDR",
@@ -45,14 +61,6 @@
       "id": "fa7546ab14b3"
     },
     {
-      "source": "ZDFheute Liveblog",
-      "tier": "primary",
-      "title": "19 Eilanträge zum Wal beim Verwaltungsgericht",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-26T09:03:49+00:00",
-      "id": "7059bb4187f3"
-    },
-    {
       "source": "IFAW",
       "tier": "primary",
       "title": "FAQ: Gestrandeter Buckelwal in der Ostsee März/April 2026",
@@ -69,12 +77,12 @@
       "id": "9384f37523ac"
     },
     {
-      "source": "NDR",
-      "tier": "primary",
-      "title": "Poel: Backhaus duldet neues Konzept für Wal-Transport",
-      "url": "https://www.ndr.de/fernsehen/sendungen/nordmagazin/poel-backhaus-duldet-neues-konzept-fuer-wal-transport,nordmagazin-9800.html",
-      "timestamp": "2026-04-25T20:33:30+00:00",
-      "id": "387cb8981797"
+      "source": "BILD",
+      "tier": "boulevard",
+      "title": "Buckelwal Timmy: Felix Bohnsack enthüllt Rettungsplan Richtung Nordsee",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQdUI5SVdiaFdXX3ZfelBqbzFQY19pRkRXV0c1Mms2MHVVbHl6bWgzNThHZ2lJLVJHaWJUeWdnTVF0R3NRY0FXcng0SjZXaTZVeFhtam1STmRJNWhaSnRCMjMxb0tSR19uNk1VNlBUX012VnViTmtidHR4eEI0VGNlNU1TdTZmUEJkNExxZXRpdzZ2WktVZVR4eVdIVlhHajhtUVVtMXk5bXVZMTg5bE1ENXk3YmxPUXlEMF9MYg?oc=5",
+      "timestamp": "2026-04-25T18:45:26+00:00",
+      "id": "547c614bb965"
     },
     {
       "source": "t-online",
@@ -87,10 +95,10 @@
     {
       "source": "BILD",
       "tier": "boulevard",
-      "title": "Buckelwal Timmy: Felix Bohnsack enthüllt Rettungsplan Richtung Nordsee",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQdUI5SVdiaFdXX3ZfelBqbzFQY19pRkRXV0c1Mms2MHVVbHl6bWgzNThHZ2lJLVJHaWJUeWdnTVF0R3NRY0FXcng0SjZXaTZVeFhtam1STmRJNWhaSnRCMjMxb0tSR19uNk1VNlBUX012VnViTmtidHR4eEI0VGNlNU1TdTZmUEJkNExxZXRpdzZ2WktVZVR4eVdIVlhHajhtUVVtMXk5bXVZMTg5bE1ENXk3YmxPUXlEMF9MYg?oc=5",
-      "timestamp": "2026-04-25T18:45:26+00:00",
-      "id": "547c614bb965"
+      "title": "Wal Timmy: Till Backhaus zieht Bilanz zu Rettung und kontert Kritik",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSzhUYk5VVHpXRzNzRWVJeUY4RGRjWlcyY1hYV2tiakNpclQ4ZFZtWUJ4TGVuSjdQRTNpbE9QYU1ZU3BidWVsVFNTc3ZqVVBQSTR2cHhYOUtMX2NtcmlyYlZXYnpnbjdYZFNRRWNuUWZSZDNEcWxzY0xrX3VmWmVqM0JoaXJZLWJ1ZldPMW9rUG9QRW4teXdHbzlPN0ROMjhELUtndmNUblN5VXVsOFlHaWdMLWpvb0k?oc=5",
+      "timestamp": "2026-04-25T15:39:55+00:00",
+      "id": "17beaff02651"
     },
     {
       "source": "t-online",
@@ -99,14 +107,6 @@
       "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101229252/ruhig-wirkender-wal-im-trubel-was-fuehlt-er-wirklich-.html",
       "timestamp": "2026-04-26T02:03:33+00:00",
       "id": "7cdbb761f8ba"
-    },
-    {
-      "source": "BILD",
-      "tier": "boulevard",
-      "title": "Wal Timmy: Till Backhaus zieht Bilanz zu Rettung und kontert Kritik",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSzhUYk5VVHpXRzNzRWVJeUY4RGRjWlcyY1hYV2tiakNpclQ4ZFZtWUJ4TGVuSjdQRTNpbE9QYU1ZU3BidWVsVFNTc3ZqVVBQSTR2cHhYOUtMX2NtcmlyYlZXYnpnbjdYZFNRRWNuUWZSZDNEcWxzY0xrX3VmWmVqM0JoaXJZLWJ1ZldPMW9rUG9QRW4teXdHbzlPN0ROMjhELUtndmNUblN5VXVsOFlHaWdMLWpvb0k?oc=5",
-      "timestamp": "2026-04-25T15:39:55+00:00",
-      "id": "17beaff02651"
     },
     {
       "source": "BILD",
