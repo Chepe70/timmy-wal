@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-26T07:08:13+00:00",
-  "last_picked_source": "ZDFheute Liveblog",
+  "generated_at": "2026-04-26T07:18:49+00:00",
+  "last_picked_source": "NDR",
   "sources": [
     "ZDFheute Liveblog",
     "NDR",
@@ -13,60 +13,28 @@
   ],
   "entries": [
     {
-      "source": "ZDFheute Liveblog",
-      "tier": "primary",
-      "title": "Sandsäcke zum Wal gebracht",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-26T07:08:13+00:00",
-      "id": "832e58fe70a4"
-    },
-    {
-      "source": "t-online",
-      "tier": "quality",
-      "title": "Ständig Menschen direkt am WalRuhig wirkender Wal im Trubel - Was fühlt er wirklich?",
-      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101229252/ruhig-wirkender-wal-im-trubel-was-fuehlt-er-wirklich-.html",
-      "timestamp": "2026-04-26T06:37:28+00:00",
-      "id": "7cdbb761f8ba"
-    },
-    {
-      "source": "ZDFheute Liveblog",
-      "tier": "primary",
-      "title": "19 Eilanträge zum Wal beim Verwaltungsgericht",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-26T07:08:13+00:00",
-      "id": "7059bb4187f3"
-    },
-    {
-      "source": "t-online",
-      "tier": "quality",
-      "title": "\"Großer Bruder\": Timmy-Retter nennen neue Details",
-      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101227202/wal-timmy-in-ostsee-live-initiative-nennt-neue-details-zur-rettungsaktion.html",
-      "timestamp": "2026-04-26T06:37:28+00:00",
-      "id": "2850c2674963"
-    },
-    {
-      "source": "ZDFheute Liveblog",
-      "tier": "primary",
-      "title": "Der Wal verharrt weiter vor Poel",
-      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
-      "timestamp": "2026-04-26T07:08:13+00:00",
-      "id": "0d3cd88d5bf9"
-    },
-    {
-      "source": "t-online",
-      "tier": "quality",
-      "title": "Transportkahn soll Buckelwal in die Nordsee bringen",
-      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101229234/transportkahn-soll-buckelwal-in-die-nordsee-bringen.html",
-      "timestamp": "2026-04-26T06:37:28+00:00",
-      "id": "af7aef5e431f"
-    },
-    {
       "source": "NDR",
       "tier": "primary",
       "title": "Ostsee-Wal vor Poel: Transport-Schute soll heute eintreffen",
       "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/ostsee-wal-vor-poel-transport-schute-soll-am-sonntag-eintreffen,wal-180.html",
-      "timestamp": "2026-04-26T06:33:38+00:00",
+      "timestamp": "2026-04-26T07:16:58+00:00",
       "id": "abf1ca68ccab"
+    },
+    {
+      "source": "NDR",
+      "tier": "primary",
+      "title": "Der gestrandete Wal in der Kirchsee vor Poel im Livestream",
+      "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/der-gestrandete-wal-in-der-kirchsee-vor-poel-im-livestream,eventlivestream-336.html",
+      "timestamp": "2026-04-26T07:12:41+00:00",
+      "id": "fa7546ab14b3"
+    },
+    {
+      "source": "ZDFheute Liveblog",
+      "tier": "primary",
+      "title": "Sandsäcke zum Wal gebracht",
+      "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
+      "timestamp": "2026-04-26T06:29:49+00:00",
+      "id": "832e58fe70a4"
     },
     {
       "source": "BILD",
@@ -77,20 +45,36 @@
       "id": "b3f2a3c1df28"
     },
     {
-      "source": "NDR",
-      "tier": "primary",
-      "title": "Der gestrandete Wal in der Kirchsee vor Poel im Livestream",
-      "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/der-gestrandete-wal-in-der-kirchsee-vor-poel-im-livestream,eventlivestream-336.html",
-      "timestamp": "2026-04-26T06:33:38+00:00",
-      "id": "fa7546ab14b3"
-    },
-    {
       "source": "IFAW",
       "tier": "primary",
       "title": "FAQ: Gestrandeter Buckelwal in der Ostsee März/April 2026",
       "url": "https://www.ifaw.org/de/aktuelles/buckelwal-ostsee-2026",
       "timestamp": "2026-04-26T06:20:15+00:00",
       "id": "09388a8ec371"
+    },
+    {
+      "source": "t-online",
+      "tier": "quality",
+      "title": "Ständig Menschen direkt am WalRuhig wirkender Wal im Trubel - Was fühlt er wirklich?",
+      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101229252/ruhig-wirkender-wal-im-trubel-was-fuehlt-er-wirklich-.html",
+      "timestamp": "2026-04-26T02:03:33+00:00",
+      "id": "7cdbb761f8ba"
+    },
+    {
+      "source": "t-online",
+      "tier": "quality",
+      "title": "Transportkahn soll Buckelwal in die Nordsee bringen",
+      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101229234/transportkahn-soll-buckelwal-in-die-nordsee-bringen.html",
+      "timestamp": "2026-04-26T02:00:52+00:00",
+      "id": "af7aef5e431f"
+    },
+    {
+      "source": "NDR",
+      "tier": "primary",
+      "title": "Poel: Backhaus duldet neues Konzept für Wal-Transport",
+      "url": "https://www.ndr.de/fernsehen/sendungen/nordmagazin/poel-backhaus-duldet-neues-konzept-fuer-wal-transport,nordmagazin-9800.html",
+      "timestamp": "2026-04-25T20:33:30+00:00",
+      "id": "387cb8981797"
     },
     {
       "source": "BILD",
@@ -107,6 +91,14 @@
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSzhUYk5VVHpXRzNzRWVJeUY4RGRjWlcyY1hYV2tiakNpclQ4ZFZtWUJ4TGVuSjdQRTNpbE9QYU1ZU3BidWVsVFNTc3ZqVVBQSTR2cHhYOUtMX2NtcmlyYlZXYnpnbjdYZFNRRWNuUWZSZDNEcWxzY0xrX3VmWmVqM0JoaXJZLWJ1ZldPMW9rUG9QRW4teXdHbzlPN0ROMjhELUtndmNUblN5VXVsOFlHaWdMLWpvb0k?oc=5",
       "timestamp": "2026-04-25T15:39:55+00:00",
       "id": "17beaff02651"
+    },
+    {
+      "source": "t-online",
+      "tier": "quality",
+      "title": "\"Großer Bruder\": Timmy-Retter nennen neue Details",
+      "url": "https://www.t-online.de/nachrichten/panorama/tiere/nachrichten/panorama/tiere/id_101227202/wal-timmy-in-ostsee-live-initiative-nennt-neue-details-zur-rettungsaktion.html",
+      "timestamp": "2026-04-24T07:02:15+00:00",
+      "id": "2850c2674963"
     }
   ]
 }

@@ -76,6 +76,61 @@ def now_iso() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
 
 
+# URL -> ISO-Timestamp Cache. Wird in main() aus prev befuellt, damit fuer bekannte
+# Artikel kein zweiter HTTP-Request anfaellt.
+ARTICLE_DATE_CACHE: dict[str, str] = {}
+
+
+def _parse_article_date(html: str) -> str | None:
+    """Sucht in der Artikelseite nach dem Veroeffentlichungsdatum.
+    Reihenfolge: meta-Tags, JSON-LD, erstes <time datetime>."""
+    soup = BeautifulSoup(html, "html.parser")
+    for sel in (
+        'meta[property="article:published_time"]',
+        'meta[name="article:published_time"]',
+        'meta[itemprop="datePublished"]',
+        'meta[property="og:article:published_time"]',
+        'meta[name="date"]',
+        'meta[name="DC.date.issued"]',
+        'meta[name="pubdate"]',
+        'meta[name="last-modified"]',
+    ):
+        el = soup.select_one(sel)
+        if el and el.get("content"):
+            return el["content"].strip()
+    for s in soup.find_all("script", attrs={"type": "application/ld+json"}):
+        raw = s.string or s.get_text() or ""
+        try:
+            data = json.loads(raw)
+        except Exception:
+            continue
+        candidates = data if isinstance(data, list) else [data]
+        for c in candidates:
+            if isinstance(c, dict):
+                d = c.get("datePublished") or c.get("dateCreated")
+                if d:
+                    return d
+    t = soup.find("time", attrs={"datetime": True})
+    if t and t.get("datetime"):
+        return t["datetime"]
+    return None
+
+
+def resolve_article_date(url: str) -> str:
+    """Liefert ISO-Timestamp fuer Artikel-URL. Cache-first, sonst Artikelseite holen.
+    Faellt auf jetzt zurueck, wenn nichts Verwertbares gefunden wird."""
+    if url in ARTICLE_DATE_CACHE:
+        return ARTICLE_DATE_CACHE[url]
+    iso = now_iso()
+    html = fetch(url)
+    if html:
+        raw = _parse_article_date(html)
+        if raw:
+            iso = to_iso(raw)
+    ARTICLE_DATE_CACHE[url] = iso
+    return iso
+
+
 def to_iso(ts: str | None) -> str:
     """Parst beliebige Timestamp-Formate (RFC 822, ISO 8601) in ISO-UTC.
     Faellt auf jetzt zurueck, wenn Parsing fehlschlaegt."""
@@ -127,7 +182,7 @@ def _generic_headline_scrape(url: str, source: str, tier: str, selectors: list[s
             link = href if (href and href.startswith("http")) else (
                 f"{url.rstrip('/')}/{href.lstrip('/')}" if href else url
             )
-            entries.append({"source": source, "tier": tier, "title": title, "url": link, "timestamp": now_iso()})
+            entries.append({"source": source, "tier": tier, "title": title, "url": link, "timestamp": resolve_article_date(link)})
             if len(entries) >= 10:
                 return entries
     return entries
@@ -199,7 +254,7 @@ def scrape_meeresmuseum() -> list[dict]:
         # Cookie/Datenschutz-Headlines aussortieren
         if re.search(r"(daten|cookie|newsletter|abschicken|entscheidung)", title, re.I):
             continue
-        entries.append({"source": "Dt. Meeresmuseum", "tier": "primary", "title": title, "url": url, "timestamp": now_iso()})
+        entries.append({"source": "Dt. Meeresmuseum", "tier": "primary", "title": title, "url": url, "timestamp": resolve_article_date(url)})
         if len(entries) >= 10:
             break
     log.info("Meeresmuseum: %d entries", len(entries))
@@ -231,7 +286,7 @@ def scrape_ndr() -> list[dict]:
             continue
         seen.add(title)
         full = href if href.startswith("http") else f"https://www.ndr.de{href}"
-        entries.append({"source": "NDR", "tier": "primary", "title": title, "url": full, "timestamp": now_iso()})
+        entries.append({"source": "NDR", "tier": "primary", "title": title, "url": full, "timestamp": resolve_article_date(full)})
         if len(entries) >= 8:
             break
     log.info("NDR: %d entries", len(entries))
@@ -283,7 +338,7 @@ def scrape_ifaw() -> list[dict]:
         title = clean(h.get_text())
         if not title or not KEYWORD_RE.search(title):
             continue
-        entries.append({"source": "IFAW", "tier": "primary", "title": title, "url": url, "timestamp": now_iso()})
+        entries.append({"source": "IFAW", "tier": "primary", "title": title, "url": url, "timestamp": resolve_article_date(url)})
         if len(entries) >= 5:
             break
     log.info("IFAW: %d entries", len(entries))
@@ -353,10 +408,17 @@ def load_previous() -> dict:
 
 
 def merge_and_dedupe(new_entries: list[dict], prev: dict, picked_source: str) -> list[dict]:
+    # ID -> Timestamp aus prev. Bei Re-Scrape behalten wir den AELTEREN Timestamp,
+    # damit ein erneuter Lauf die einmal gefundene Veroeffentlichungszeit nicht
+    # mit der aktuellen Run-Zeit ueberschreibt (Artikel-Pubdate ist stabil).
+    prev_ts: dict[str, str] = {e.get("id"): e.get("timestamp") for e in prev.get("entries", []) if e.get("id") and e.get("timestamp")}
     merged: list[dict] = []
     new_ids: set[str] = set()
     for entry in new_entries:
         entry["id"] = make_id(entry["source"], entry["title"], entry["url"])
+        old_ts = prev_ts.get(entry["id"])
+        if old_ts and (entry.get("timestamp") or "") > old_ts:
+            entry["timestamp"] = old_ts
         new_ids.add(entry["id"])
         merged.append(entry)
     # Alte Eintraege gegen aktuellen Wal-Filter pruefen — entfernt False-Positives, die unter laxerem Filter reinkamen.
@@ -408,6 +470,12 @@ def merge_and_dedupe(new_entries: list[dict], prev: dict, picked_source: str) ->
 def main() -> int:
     log.info("=== Timmy Update Run ===")
     state = load_state()
+    # Cache aus vorherigem Lauf vorbefuellen: bekannte URLs nicht erneut nachladen.
+    prev_pre = load_previous()
+    for e in prev_pre.get("entries", []):
+        u, ts = e.get("url"), e.get("timestamp")
+        if u and ts:
+            ARTICLE_DATE_CACHE[u] = ts
     src = pick_source(state)
     log.info("Picked source: %s (weight=%.1f)", src["name"], src["weight"])
 
@@ -420,7 +488,7 @@ def main() -> int:
     state[src["name"]] = {"last_checked": now_iso(), "entries_found": len(new_entries)}
     save_state(state)
 
-    prev = load_previous()
+    prev = prev_pre
     merged = merge_and_dedupe(new_entries, prev, src["name"])
 
     prev_ids = {e.get("id") for e in prev.get("entries", [])}
