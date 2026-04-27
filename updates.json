@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-26T22:23:25+00:00",
-  "last_picked_source": "ZDFheute Liveblog",
+  "generated_at": "2026-04-27T00:08:12+00:00",
+  "last_picked_source": "Nordkurier",
   "sources": [
     "ZDFheute Liveblog",
     "NDR",
@@ -31,10 +31,10 @@
     {
       "source": "ZDFheute Liveblog",
       "tier": "primary",
-      "title": "Geldgeber Gunz will weiter Wal-Transport \"bis zum Ende\"",
+      "title": "19 Eilanträge zum Wal beim Verwaltungsgericht",
       "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
       "timestamp": "2026-04-26T22:23:25+00:00",
-      "id": "28df4fa4a35e"
+      "id": "7059bb4187f3"
     },
     {
       "source": "NDR",
@@ -47,10 +47,10 @@
     {
       "source": "ZDFheute Liveblog",
       "tier": "primary",
-      "title": "19 Eilanträge zum Wal beim Verwaltungsgericht",
+      "title": "Geldgeber Gunz will weiter Wal-Transport \"bis zum Ende\"",
       "url": "https://www.zdfheute.de/panorama/wal-timmy-ostsee-liveblog-100.html",
       "timestamp": "2026-04-26T22:23:25+00:00",
-      "id": "7059bb4187f3"
+      "id": "28df4fa4a35e"
     },
     {
       "source": "BILD",
@@ -135,10 +135,10 @@
     {
       "source": "Nordkurier",
       "tier": "regional",
-      "title": "Ein Wal vor unseren Stränden: warum Rückkehr so selten gelingt und Hoffnung bleibt",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPa3lqbl93eTlzUGJMZUN3MnAtU0djUGgyVDNCSUphSnUxVnh1QlBCU2xubGY2b2x3TTNUNkliWlFDSk54RTFqY1NuX1ZDeHhrekRmVFZobzRlanpndmN6Z3BxZ0lZUmxOZHI1cDRiRUZTa2ZTVTY3OGM0QzBjNHZvR0w4RDF0bFIteVRIcDNkbV9nZHhacWo3SlprS291SDhWTjE1SWt5WS04bVpiYktIMmlUN0pPZklJYnVyb3Q4VWU2dU93emhUWmhfNEQzZw?oc=5",
-      "timestamp": "2026-04-23T15:36:00+00:00",
-      "id": "0a797b1f5c90"
+      "title": "Wal „Timmy“ wartet auf Rettung Entscheidung steht weiter aus",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWVo5MGFLR0lLekpUbjNfZFRlZjUwSmdvZ3I0UVlzTXp4Y1ZnSWRfYU1YQlA5SmkwMzVrdTgyRUVqMnNPTmdZVXRjdlVHSko4eWs4dnVXRlJoYzlxVGoyWHl2NWZFQUdJelZOTE9EamNrcTEteWhtdFI4bDlsREIzeGFlR0F2SmlzOHF2M0Q1OGw0cUdnQ2w5Z1RxUTNTZUtXN2tTTVROVGFaT3Z4MWgw?oc=5",
+      "timestamp": "2026-04-23T22:49:00+00:00",
+      "id": "d85087537063"
     },
     {
       "source": "Tagesschau",
@@ -151,10 +151,10 @@
     {
       "source": "Nordkurier",
       "tier": "regional",
-      "title": "Wal „Timmy“ wartet auf Rettung Entscheidung steht weiter aus",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWVo5MGFLR0lLekpUbjNfZFRlZjUwSmdvZ3I0UVlzTXp4Y1ZnSWRfYU1YQlA5SmkwMzVrdTgyRUVqMnNPTmdZVXRjdlVHSko4eWs4dnVXRlJoYzlxVGoyWHl2NWZFQUdJelZOTE9EamNrcTEteWhtdFI4bDlsREIzeGFlR0F2SmlzOHF2M0Q1OGw0cUdnQ2w5Z1RxUTNTZUtXN2tTTVROVGFaT3Z4MWgw?oc=5",
-      "timestamp": "2026-04-23T22:49:00+00:00",
-      "id": "d85087537063"
+      "title": "So steht es um die Rettung des Buckelwals in der Ostsee: Entscheidende Tage rücken näher",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPSTRpQnhaYzZZVHpLVXhRek5aLXNJd1d0Z3ZLSHVhdS1CYmw1RnZfSkxUS3Q3b1ZRa1VVVHJDS2MtOW8yUnFIQTlVSmx1MVh4TDJKU2lNMmRQb09zSnI1X3JZeGpkTkt2dXBkTTZjcU1UN256MjBDSUhhYm9SNTh6eDB4S1c1b2NwU294Qk1pbmVqZVd4WU53Wnpna0llN3h5TEt5M2ZvQTNfby1Bcm9pUEtPdHdIZ0hrSjdrVkQyNXhHY04yc0I0ZDNYRHg0Z0FRMVNkeUtVd0U?oc=5",
+      "timestamp": "2026-04-24T06:37:00+00:00",
+      "id": "4fbe21819c93"
     }
   ]
 }
